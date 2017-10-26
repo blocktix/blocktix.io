@@ -24,6 +24,7 @@ header {
     transition: all 1s;
     width: 100%;
     z-index: 2;
+    padding: 1vh;
     &.inverse {
       background-color: rgba(111, 32, 36, .75);
     }

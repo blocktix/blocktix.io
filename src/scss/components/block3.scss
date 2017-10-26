@@ -6,9 +6,9 @@
       height: 453px;
       .row {
         flex-shrink: 0;
-        height: 170px;
+        height: 180px;
         &:first-child {
-          padding-top: 20px;
+          padding-top: 30px;
         }
       }
     }
@@ -50,7 +50,7 @@
             order: 1;
           }
           &.description {
-            margin-left: -26px; 
+            margin-left: -26px;
             text-align: right;
           }
         }
