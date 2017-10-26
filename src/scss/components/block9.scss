@@ -1,27 +1,20 @@
 .block {
-  &.block7 {
-    background-image: url(../img/block_gray_bg_rotate.svg?r);
-    background-position: top left;
-    background-repeat: no-repeat;
-    background-size: 55%;
-    margin-top: -25vh;
-    padding-bottom: 15vh;
-    padding-top: 30vh;
+  &.block9 {
     text-align: center;
     & > p {
       margin: 0 auto;
       width: 40%;
     }
     .row {
-      justify-content: space-between;
-      margin-top: 10vh;
+      justify-content: space-around;
+      margin-top: 5vh;
       .col {
         align-items: center;
         display: flex;
         flex-direction: column;
         flex-shrink: 0;
         font-size: 1.9vh;
-        width: 25%;
+        width: 20%;
         .point {
           margin-bottom: 4vh;
         }

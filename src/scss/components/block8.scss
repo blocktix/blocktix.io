@@ -1,0 +1,105 @@
+$slider_width: 80vh;
+.block {
+  &.block8 {
+    background-image: url(../img/block_gray_bg.svg);
+    background-position: top right;
+    background-repeat: no-repeat;
+    background-size: 65%;
+    margin-top: -15vh;
+    padding-bottom: 15vh;
+    padding-top: 35vh;
+    h2 {
+      margin-top: -20vh;
+      text-align: center;
+    }
+
+    ul.navigation{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: 9vh;
+      li{
+        display: block;
+        width: 4px;
+        height: 4px;
+        border-radius: 50px;
+        padding: 10px;
+        margin: 0 3px;
+        cursor: pointer;
+        &.active{
+          border: 1px solid #EF494E;
+          &:before{
+            background-color: #EF494E;
+          }
+        }
+        &:before{
+          content: '';
+          width: 4px;
+          height: 4px;
+          display: block;
+          background-color: #E4E4E4;
+          border-radius: 50px;
+          margin-top: -2px;
+          margin-left: -2px;
+        }
+      }
+    }
+    .slider {
+    }
+    .cards {
+      margin-top: 10vh;
+      .card {
+        background-color: #fff;
+        border-radius: 6px;
+        box-shadow: 0 2px 50px 0 rgba(143,143,143,.08);
+        margin: 0 15px;
+        min-height: 130px;
+        padding: 2.8vh;
+        width: 300px;
+        color: #000000;
+        font-size: 2.4vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        .card-header{
+          display: flex;
+          flex-direction: row;
+          padding-bottom: 2vh;
+          img{
+            width: 34px;
+            height: 34px;
+          }
+          .person{
+            line-height: auto;
+            /*display: flex;
+            flex-direction: column;*/
+            /*flex-wrap: wrap;*/
+          }
+        }
+        .card-content{
+          flex-wrap: wrap;
+          /*display: flex;*/
+        }
+      }
+    }
+    .frame {
+      font-size: 0;
+      line-height: 0;
+      overflow: hidden;
+      position: relative;
+      white-space: nowrap;
+      margin-left: calc(100% - #{$slider_width});
+      width: $slider_width;
+    }
+
+    .slides {
+      display: inline-block;
+    }
+
+    li {
+      display: inline-block;
+      position: relative;
+      width: 65vh;
+    }
+  }
+}

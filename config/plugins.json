@@ -2,7 +2,7 @@
   "css": {
   },
   "js": {
-    "jquery": "jquery/dist/jquery.min.js"
+    "lory": "lory.js/dist/lory.min.js"
   },
   "img": {
   },
