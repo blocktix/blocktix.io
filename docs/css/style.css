@@ -283,8 +283,8 @@ body {
     color: #394e57;
     font-size: 2.9vh;
     font-weight: bolder;
-    text-transform: uppercase;
-    padding-bottom: 1.5vh; }
+    padding-bottom: 1.5vh;
+    text-transform: uppercase; }
   .block h2 {
     color: #394e57;
     font-size: 2.5vh;
@@ -342,13 +342,13 @@ header {
     width: 100%;
     z-index: 0; }
   header .fixed {
+    padding: 1vh;
     position: fixed;
     -webkit-transition: all 1s;
     -o-transition: all 1s;
     transition: all 1s;
     width: 100%;
-    z-index: 2;
-    padding: 1vh; }
+    z-index: 2; }
     header .fixed.inverse {
       background-color: rgba(111, 32, 36, 0.75); }
     header .fixed .wrapper {
