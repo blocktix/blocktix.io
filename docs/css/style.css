@@ -292,6 +292,8 @@ body {
     text-transform: uppercase; }
     .block h2.red {
       color: #ef494d; }
+  .block p {
+    padding-bottom: 2vh; }
   .block .point {
     -webkit-box-align: center;
     -ms-flex-align: center;
@@ -390,9 +392,11 @@ header {
       color: #f0f0f0;
       font-family: Helvetica;
       font-size: 3vh;
-      font-weight: 400; }
+      font-weight: 400;
+      padding-bottom: 2vh; }
     header .wrapper section p {
-      font-size: 1.9vh; }
+      font-size: 1.9vh;
+      padding-bottom: 1vh; }
       header .wrapper section p.thin {
         font-weight: 100; }
     header .wrapper section .buttons {

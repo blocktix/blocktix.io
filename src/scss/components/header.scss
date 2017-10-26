@@ -68,9 +68,11 @@ header {
         font-family: Helvetica;
         font-size: 3vh;
         font-weight: 400;
+        padding-bottom: 2vh;
       }
       p {
         font-size: 1.9vh;
+        padding-bottom: 1vh;
         &.thin {
           font-weight: 100;
         }
