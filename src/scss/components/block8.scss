@@ -13,34 +13,34 @@ $slider_width: 80vh;
       text-align: center;
     }
 
-    ul.navigation{
+    ul.navigation {
+      align-items: center;
       display: flex;
       justify-content: center;
-      align-items: center;
       margin-top: 9vh;
-      li{
-        display: block;
-        width: 4px;
-        height: 4px;
+      li {
         border-radius: 50px;
-        padding: 10px;
-        margin: 0 3px;
         cursor: pointer;
-        &.active{
-          border: 1px solid #EF494E;
-          &:before{
-            background-color: #EF494E;
+        display: block;
+        height: 4px;
+        margin: 0 3px;
+        padding: 10px;
+        width: 4px;
+        &.active {
+          border: 1px solid #ef494e;
+          &:before {
+            background-color: #ef494e;
           }
         }
-        &:before{
-          content: '';
-          width: 4px;
-          height: 4px;
-          display: block;
-          background-color: #E4E4E4;
+        &:before {
+          background-color: #e4e4e4;
           border-radius: 50px;
-          margin-top: -2px;
+          content: '';
+          display: block;
+          height: 4px;
           margin-left: -2px;
+          margin-top: -2px;
+          width: 4px;
         }
       }
     }
@@ -52,31 +52,31 @@ $slider_width: 80vh;
         background-color: #fff;
         border-radius: 6px;
         box-shadow: 0 2px 50px 0 rgba(143,143,143,.08);
+        color: #000;
+        display: flex;
+        flex-direction: column;
+        font-size: 2.4vh;
+        justify-content: flex-start;
         margin: 0 15px;
         min-height: 130px;
         padding: 2.8vh;
         width: 300px;
-        color: #000000;
-        font-size: 2.4vh;
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-start;
-        .card-header{
+        .card-header {
           display: flex;
           flex-direction: row;
           padding-bottom: 2vh;
-          img{
-            width: 34px;
+          img {
             height: 34px;
+            width: 34px;
           }
-          .person{
+          .person {
             line-height: auto;
             /*display: flex;
             flex-direction: column;*/
             /*flex-wrap: wrap;*/
           }
         }
-        .card-content{
+        .card-content {
           flex-wrap: wrap;
           /*display: flex;*/
         }
@@ -85,10 +85,10 @@ $slider_width: 80vh;
     .frame {
       font-size: 0;
       line-height: 0;
+      margin-left: calc(100% - #{$slider_width});
       overflow: hidden;
       position: relative;
       white-space: nowrap;
-      margin-left: calc(100% - #{$slider_width});
       width: $slider_width;
     }
 
