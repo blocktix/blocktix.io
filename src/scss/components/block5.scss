@@ -1,5 +1,9 @@
 .block{
   &.block5{
+    h2{
+      text-align: center;
+      margin-top: -15vh;
+    }
     background-image: url(../img/block_gray_bg_rotate.svg?r);
     background-position: top left;
     background-repeat: no-repeat;
@@ -7,18 +11,21 @@
     padding-top: 35vh;
     margin-top: -5vh;
     padding-bottom: 15vh;
-    .visual{
-      order: 2;
-      width: 45%;
-      text-align: center;
-      img{
+    .row{
+      margin-top: 5vh;
+      .visual{
+        order: 2;
         width: 45%;
-        margin: 4vh auto auto 5vh;
+        text-align: center;
+        img{
+          width: 45%;
+          margin: 4vh auto auto 5vh;
+        }
       }
-    }
-    .overview{
-      order: 1;
-      width: 50%;
+      .overview{
+        order: 1;
+        width: 50%;
+      }
     }
   }
 }

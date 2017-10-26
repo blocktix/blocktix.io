@@ -1,15 +1,6 @@
-$point-size: 33px;
 .block{
   &.block3, &.block4{
     text-align: center;
-    h2{
-      font-size: 2.3vh;
-      color: #394E57;
-      font-weight: bolder;
-      &.red{
-        color: #EF494D;
-      }
-    }
     .tree{
       height: 453px;
       .row{
@@ -46,22 +37,6 @@ $point-size: 33px;
         &:nth-child(1){
           i.point{ order: 1; }
           &.description{ text-align: right; margin-left: -26px; }
-        }
-        i.point{
-          background-image: url(../img/point_bg.svg);
-          background-repeat: no-repeat;
-          background-size: contain;
-          background-position: center;
-          color: #ffffff;
-          display: flex;
-          font-size: 1.1vh;
-          justify-content: center;
-          align-items: center;
-          font-style: normal;
-          width: $point-size;
-          height: $point-size;
-          flex-basis: $point-size;
-          flex-shrink: 0;
         }
       }
     }

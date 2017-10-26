@@ -126,12 +126,6 @@ body {
 
 .block.block3, .block.block4 {
   text-align: center; }
-  .block.block3 h2, .block.block4 h2 {
-    font-size: 2.3vh;
-    color: #394E57;
-    font-weight: bolder; }
-    .block.block3 h2.red, .block.block4 h2.red {
-      color: #EF494D; }
   .block.block3 .tree, .block.block4 .tree {
     height: 453px; }
     .block.block3 .tree .row, .block.block4 .tree .row {
@@ -183,29 +177,6 @@ body {
       .block .tree .row .col:nth-child(1).description {
         text-align: right;
         margin-left: -26px; }
-      .block .tree .row .col i.point {
-        background-image: url(../img/point_bg.svg);
-        background-repeat: no-repeat;
-        background-size: contain;
-        background-position: center;
-        color: #ffffff;
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: flex;
-        font-size: 1.1vh;
-        -webkit-box-pack: center;
-        -ms-flex-pack: center;
-        justify-content: center;
-        -webkit-box-align: center;
-        -ms-flex-align: center;
-        align-items: center;
-        font-style: normal;
-        width: 33px;
-        height: 33px;
-        -ms-flex-preferred-size: 33px;
-        flex-basis: 33px;
-        -ms-flex-negative: 0;
-        flex-shrink: 0; }
 
 .block.block4 {
   margin-top: 25vh; }
@@ -218,20 +189,89 @@ body {
   padding-top: 35vh;
   margin-top: -5vh;
   padding-bottom: 15vh; }
-  .block.block5 .visual {
-    -webkit-box-ordinal-group: 3;
-    -ms-flex-order: 2;
-    order: 2;
-    width: 45%;
-    text-align: center; }
-    .block.block5 .visual img {
+  .block.block5 h2 {
+    text-align: center;
+    margin-top: -15vh; }
+  .block.block5 .row {
+    margin-top: 5vh; }
+    .block.block5 .row .visual {
+      -webkit-box-ordinal-group: 3;
+      -ms-flex-order: 2;
+      order: 2;
       width: 45%;
-      margin: 4vh auto auto 5vh; }
-  .block.block5 .overview {
-    -webkit-box-ordinal-group: 2;
-    -ms-flex-order: 1;
-    order: 1;
-    width: 50%; }
+      text-align: center; }
+      .block.block5 .row .visual img {
+        width: 45%;
+        margin: 4vh auto auto 5vh; }
+    .block.block5 .row .overview {
+      -webkit-box-ordinal-group: 2;
+      -ms-flex-order: 1;
+      order: 1;
+      width: 50%; }
+
+.block.block6 {
+  background-image: url(../img/block_gray_bg.svg);
+  background-position: top right;
+  background-repeat: no-repeat;
+  background-size: 55%;
+  padding-top: 35vh;
+  margin-top: -15vh;
+  padding-bottom: 15vh; }
+  .block.block6 h2 {
+    text-align: center;
+    margin-top: -20vh; }
+  .block.block6 .row {
+    margin-top: 20vh; }
+    .block.block6 .row .visual {
+      -webkit-box-ordinal-group: 2;
+      -ms-flex-order: 1;
+      order: 1;
+      width: 50%;
+      text-align: left; }
+      .block.block6 .row .visual img {
+        width: 45%;
+        margin: 17vh auto auto 5vh; }
+    .block.block6 .row .overview {
+      -webkit-box-ordinal-group: 3;
+      -ms-flex-order: 2;
+      order: 2;
+      width: 46%;
+      padding-top: 3vh; }
+
+.block.block7 {
+  text-align: center;
+  background-image: url(../img/block_gray_bg_rotate.svg?r);
+  background-position: top left;
+  background-repeat: no-repeat;
+  background-size: 55%;
+  padding-top: 30vh;
+  margin-top: -25vh;
+  padding-bottom: 15vh; }
+  .block.block7 > p {
+    width: 40%;
+    margin: 0 auto; }
+  .block.block7 .row {
+    margin-top: 10vh;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between; }
+    .block.block7 .row .col {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+      flex-direction: column;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      -ms-flex-negative: 0;
+      flex-shrink: 0;
+      width: 25%;
+      font-size: 1.9vh; }
+      .block.block7 .row .col .point {
+        margin-bottom: 4vh; }
 
 .block {
   color: #2d2d2d;
@@ -240,7 +280,38 @@ body {
   .block h1 {
     font-size: 2.9vh;
     color: #394E57;
-    font-weight: bolder; }
+    font-weight: bolder;
+    text-transform: uppercase; }
+  .block h2 {
+    font-size: 2.5vh;
+    color: #394E57;
+    font-weight: bolder;
+    text-transform: uppercase; }
+    .block h2.red {
+      color: #EF494D; }
+  .block .point {
+    background-image: url(../img/point_bg.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    color: #ffffff;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    font-size: 1.1vh;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    font-style: normal;
+    width: 33px;
+    height: 33px;
+    -ms-flex-preferred-size: 33px;
+    flex-basis: 33px;
+    -ms-flex-negative: 0;
+    flex-shrink: 0; }
 
 .row {
   display: -webkit-box;
