@@ -1,0 +1,30 @@
+$debug: false;
+$font_icons: 'icons';
+$color_white: #fff;
+$color_black: #000;
+$media-md: 1200px;
+$media-sm: 991px;
+$media-xs: 767px;
+$media-sxs: 600px;
+$media-exs: 500px;
+$z-index: (
+
+);
+
+@mixin transition($props...) {
+  @if(length($props) > 0) {
+    transition: $props;
+  } @else {
+    transition: all .3s ease;
+  }
+}
+
+@mixin z-layer($layer) {
+  z-index: map-get($z-index, $layer);
+}
+
+@mixin ellipsis() {
+  max-width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}

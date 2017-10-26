@@ -1,0 +1,45 @@
+@import '../global';
+
+@if($debug) {
+  .page-nav {
+    @include transition;
+
+    background-color: $color_black;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, .3);
+    left: 0;
+    padding: 7px 10px;
+    position: fixed;
+    top: 50%;
+    transform: translate(-100%, -50%);
+    z-index: 50;
+
+    &:hover {
+      transform: translate(0, -50%);
+    }
+
+    &:before {
+      border-color: transparent transparent transparent $color_black;
+      border-style: solid;
+      border-width: 17px 0 17px 20px;
+      content: '';
+      height: 0;
+      padding-left: 10px;
+      position: absolute;
+      right: 0;
+      top: 50%;
+      transform: translate(100%, -50%);
+      width: 0;
+    }
+
+    &__link {
+      @include transition;
+
+      color: $color_white;
+      display: block;
+
+      &:hover {
+        color: aquamarine;
+      }
+    }
+  }
+}

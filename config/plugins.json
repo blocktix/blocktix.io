@@ -1,0 +1,11 @@
+{
+  "css": {
+  },
+  "js": {
+    "jquery": "jquery/dist/jquery.min.js"
+  },
+  "img": {
+  },
+  "font": {
+  }
+}

@@ -1,0 +1,24 @@
+.block{
+  &.block2{
+    background-image: url(../img/block_gray_bg.svg);
+    background-position: top right;
+    background-repeat: no-repeat;
+    background-size: 55%;
+    padding-top: 35vh;
+    margin-top: -15vh;
+    padding-bottom: 15vh;
+    .visual{
+      order: 1;
+      width: 50%;
+      text-align: left;
+      img{
+        width: 45%;
+        margin: 4vh auto auto 5vh;
+      }
+    }
+    .overview{
+      order: 2;
+      width: 40%;
+    }
+  }
+}

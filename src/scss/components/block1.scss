@@ -1,0 +1,19 @@
+.block{
+  &.block1{
+    margin-top: 6vh;
+    .visual{
+      width: 60%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      img{
+        width: 60%;
+        margin-top: -11vh;
+        z-index: 1;
+      }
+    }
+    .overview{
+      width: 40%;
+    }
+  }
+}

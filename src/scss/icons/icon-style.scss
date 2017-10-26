@@ -1,0 +1,23 @@
+@import '../global';
+
+[class*='icon_']:before,
+[class*='icon_']:after {
+  display: inline-block;
+  font-family: $font_icons;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  line-height: 1em;
+  margin-left: 5px;
+  margin-right: 5px;
+  text-align: center;
+  text-decoration: none;
+  text-transform: none;
+
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  &:hover {
+    text-decoration: none;
+  }
+}

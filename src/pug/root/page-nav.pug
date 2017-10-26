@@ -1,0 +1,4 @@
+if config.debug
+    .page-nav
+        each page in ['index']
+            a.page-nav__link(href='#{page}.html')= page

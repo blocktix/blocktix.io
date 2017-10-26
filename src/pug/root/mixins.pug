@@ -1,0 +1,10 @@
+mixin text(count = 10)
+  -
+    const charset = 'abcdefghijklmnopqrstuvwxyz   ';
+
+    const text = new Array(count)
+      .fill(null)
+      .map(() => charset.charAt(Math.floor(Math.random() * charset.length)))
+      .join('');
+
+  = text
