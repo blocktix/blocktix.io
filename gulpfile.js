@@ -6,7 +6,7 @@ const beautifierConfigPath = './config/beautifier.json';
 const plugins = require('./config/plugins.json');
 const csscomb = require('csscomb')(cssConfig);
 const sourceDirectory = 'src/';
-const buildDirectory = 'build/';
+const buildDirectory = 'docs/';
 const nodeModulesDirectory = 'node_modules/';
 
 const getPluginsPaths = type => {

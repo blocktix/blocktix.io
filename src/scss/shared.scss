@@ -1,5 +1,6 @@
 @import 'global';
-html, body{
+html,
+body {
   margin: 0;
   padding: 0;
 }
@@ -16,7 +17,7 @@ body {
   width: 100%;
 }
 
-.wrapper{
+.wrapper {
   margin: 0 10%;
 }
 
@@ -51,8 +52,8 @@ body {
   display: block !important;
 }
 
-@media(max-width: 700px){
-  .wrapper{
+@media(max-width: 700px) {
+  .wrapper {
     margin: 0;
   }
 }

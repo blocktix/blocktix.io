@@ -1,28 +1,28 @@
-.block{
-  &.block5{
-    h2{
-      text-align: center;
-      margin-top: -15vh;
-    }
+.block {
+  &.block5 {
     background-image: url(../img/block_gray_bg_rotate.svg?r);
     background-position: top left;
     background-repeat: no-repeat;
     background-size: 55%;
-    padding-top: 35vh;
     margin-top: -5vh;
     padding-bottom: 15vh;
-    .row{
+    padding-top: 35vh;
+    h2 {
+      margin-top: -15vh;
+      text-align: center;
+    }
+    .row {
       margin-top: 5vh;
-      .visual{
+      .visual {
         order: 2;
-        width: 45%;
         text-align: center;
-        img{
-          width: 45%;
+        width: 45%;
+        img {
           margin: 4vh auto auto 5vh;
+          width: 45%;
         }
       }
-      .overview{
+      .overview {
         order: 1;
         width: 50%;
       }

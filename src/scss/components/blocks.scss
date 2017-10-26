@@ -1,38 +1,37 @@
 $point-size: 33px;
-.block
-{
+.block {
   color: #2d2d2d;
-  font-weight: 200;
   font-size: 2.2vh;
-  h1{
+  font-weight: 200;
+  h1 {
+    color: #394e57;
     font-size: 2.9vh;
-    color: #394E57;
     font-weight: bolder;
     text-transform: uppercase;
   }
-  h2{
+  h2 {
+    color: #394e57;
     font-size: 2.5vh;
-    color: #394E57;
     font-weight: bolder;
     text-transform: uppercase;
-    &.red{
-      color: #EF494D;
+    &.red {
+      color: #ef494d;
     }
   }
-  .point{
+  .point {
+    align-items: center;
     background-image: url(../img/point_bg.svg);
+    background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
-    background-position: center;
-    color: #ffffff;
+    color: #fff;
     display: flex;
-    font-size: 1.1vh;
-    justify-content: center;
-    align-items: center;
-    font-style: normal;
-    width: $point-size;
-    height: $point-size;
     flex-basis: $point-size;
     flex-shrink: 0;
+    font-size: 1.1vh;
+    font-style: normal;
+    height: $point-size;
+    justify-content: center;
+    width: $point-size;
   }
 }

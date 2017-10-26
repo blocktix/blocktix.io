@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1104px" height="907px" viewBox="0 0 1104 907" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 46.2 (44496) - http://www.bohemiancoding.com/sketch -->
+    <title>Path 46 Copy</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="73.787651%" id="linearGradient-1">
+            <stop stop-color="#F5F5F5" offset="0%"></stop>
+            <stop stop-color="#FFFFFF" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Apple-TV-Copy-2" transform="translate(0.000000, -4805.000000)" fill="url(#linearGradient-1)">
+            <g id="5" transform="translate(-36.000000, 4792.000000)">
+                <path d="M1140,0 L135.644603,388.743862 C71.4429992,416.819482 32.6457883,441.405987 19.2529707,462.503379 C-0.836255675,494.149465 1.62514309,546.426804 0.812571547,587.717617 C0.270857182,615.244826 3.68737751e-13,726.00562 2.27373675e-13,920 L1140,920 L1140,0 Z" id="Path-46-Copy" transform="translate(570.000000, 460.000000) scale(-1, 1) translate(-570.000000, -460.000000) "></path>
+            </g>
+        </g>
+    </g>
+</svg>

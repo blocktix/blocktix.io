@@ -1,18 +1,18 @@
-.block{
-  &.block1{
+.block {
+  &.block1 {
     margin-top: 6vh;
-    .visual{
-      width: 60%;
+    .visual {
+      align-items: center;
       display: flex;
       justify-content: center;
-      align-items: center;
-      img{
-        width: 60%;
+      width: 60%;
+      img {
         margin-top: -11vh;
+        width: 60%;
         z-index: 1;
       }
     }
-    .overview{
+    .overview {
       width: 40%;
     }
   }

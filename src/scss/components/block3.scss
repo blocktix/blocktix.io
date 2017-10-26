@@ -1,42 +1,58 @@
-.block{
-  &.block3, &.block4{
+.block {
+  &.block3,
+  &.block4 {
     text-align: center;
-    .tree{
+    .tree {
       height: 453px;
-      .row{
+      .row {
         flex-shrink: 0;
         height: 170px;
-        &:first-child{ padding-top: 20px; }
+        &:first-child {
+          padding-top: 20px;
+        }
       }
     }
   }
-  .tree{
-    width: 50%;
-    margin: 5vh auto 0 auto;
+  .tree {
     background-image: url(../img/tree.svg);
-    background-repeat: no-repeat;
     background-position: center;
+    background-repeat: no-repeat;
     background-size: contain;
-    .row{
-      justify-content: space-between;
+    margin: 5vh auto 0 auto;
+    width: 50%;
+    .row {
       align-items: center;
-      &:nth-child(2n + 1){
-        .point{ margin-left: 2vh; }
-      }
-      .col{
-        width: 40%;
-        img{ width: 50% }
-        &.description{
-          font-size: 2vh;
-          display: flex;
-          justify-content: flex-start;
-          align-items: center;
-          text-align: left;
-          span, i.point{ margin-right: 2vh; white-space: nowrap; }
+      justify-content: space-between;
+      &:nth-child(2n + 1) {
+        .point {
+          margin-left: 2vh;
         }
-        &:nth-child(1){
-          i.point{ order: 1; }
-          &.description{ text-align: right; margin-left: -26px; }
+      }
+      .col {
+        width: 40%;
+        img {
+          width: 50%;
+        }
+        &.description {
+          align-items: center;
+          display: flex;
+          font-size: 2vh;
+          justify-content: flex-start;
+          text-align: left;
+          span,
+          i.point {
+            margin-right: 2vh;
+            white-space: nowrap;
+          }
+        }
+        &:nth-child(1) {
+          i.point {
+            order: 1;
+          }
+          &.description {
+            margin-left: -26px; 
+            text-align: right;
+          }
         }
       }
     }
