@@ -2,11 +2,11 @@ header {
   background-attachment: fixed;
   background-color: #691c20;
   background-image: url(../img/bg.jpg);
-  background-position: center -50px;
+  background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
   border: 0;
-  min-height: 99vh;
+  min-height: 119vh;
   overflow: hidden;
   position: relative;
   &:after {
@@ -64,7 +64,7 @@ header {
   .wrapper {
     section {
       color: #fff;
-      margin: 15vh auto 5vh auto;
+      margin: 25vh auto 5vh auto;
       position: relative;
       text-align: center;
       width: 63%;
@@ -73,8 +73,9 @@ header {
       h1 {
         color: #f0f0f0;
         font-family: Helvetica;
-        font-size: 3vh;
+        font-size: 3.5vh;
         font-weight: 400;
+        line-height: 110%;
         padding-bottom: 2vh;
       }
       p {

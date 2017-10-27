@@ -9,10 +9,31 @@ var isInViewport = function(element) {
   );
 }
 
-document.addEventListener("DOMContentLoaded", function() {
-  var watched = document.querySelectorAll('.scroll_watch')
+var debounce = function(func, wait, immediate) {
+  var timeout;
+  return function() {
+    var context = this, args = arguments
+    var later = function() {
+      timeout = null
+      if (!immediate) func.apply(context, args)
+    }
+    var callNow = immediate && !timeout
+    clearTimeout(timeout)
+    timeout = setTimeout(later, wait)
+    if (callNow) func.apply(context, args)
+  }
+}
 
-  window.onscroll = function() {
+document.addEventListener("DOMContentLoaded", function() {
+  var elements = Array.from(document.querySelectorAll('.scroll_watch'))
+  Array.prototype.forEach.call(document.querySelectorAll('.navigation_link'), function(li){
+    li.querySelector('a').addEventListener('click', function(event){
+      event.preventDefault()
+      li.classList.add('active')
+      scrollIt(document.querySelector(this.hash), 1000, 'easeInOutQuint')
+    });
+  });
+  var scroll_watch = debounce(function(){
     var scrollPosition = document.documentElement.scrollTop || document.body.scrollTop;
     var element = document.querySelector('header > div.fixed');
     if (scrollPosition > 80){
@@ -20,7 +41,23 @@ document.addEventListener("DOMContentLoaded", function() {
     } else {
       element.classList.remove('inverse')
     }
-  }
+    var sections = []
+    Array.prototype.forEach.call(elements, function(e) {
+      document.querySelector('a[href*=' + e.id + ']').parentNode.classList.remove('active')
+      var top = e.offsetTop
+      var bottom = top + e.offsetHeight
+      sections[e.id] = {
+        top: top - top * 0.09,
+        bottom: bottom - bottom * 0.1
+      }
+    });
+    for (i in sections) {
+      if (sections[i].top <= scrollPosition && sections[i].bottom >= scrollPosition) {
+        document.querySelector('a[href*=' + i + ']').parentNode.classList.add('active')
+      }
+    }
+  }, 25);
+  window.addEventListener('scroll', scroll_watch);
 
   var slider        = document.querySelector('.team_slider');
   var dot_count     = slider.querySelectorAll('.js_slide').length;
@@ -39,7 +76,6 @@ document.addEventListener("DOMContentLoaded", function() {
         for (var i = 0, len = dot_count; i < len; i++) {
           dot_container.childNodes[i].addEventListener('click', function(e) {
             var index = Array.prototype.indexOf.call(dot_container.childNodes, e.target);
-            // console.log(index)
             dot_navigation_slider.slideTo(index);
           });
         }
@@ -48,7 +84,7 @@ document.addEventListener("DOMContentLoaded", function() {
         for (var i = 0, len = dot_container.childNodes.length; i < len; i++) {
           dot_container.childNodes[i].classList.remove('active');
         }
-        // console.log(e.detail)
+
         if (dot_container.childNodes[e.detail.currentSlide - 1]){
           dot_container.childNodes[e.detail.currentSlide - 1].classList.add('active');
         }
