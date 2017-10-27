@@ -10,7 +10,6 @@ var isInViewport = function(element) {
 }
 
 document.addEventListener("DOMContentLoaded", function() {
-
   window.onscroll = function() {
     var scrollPosition = document.documentElement.scrollTop || document.body.scrollTop;
     var element = document.querySelector('header > div.fixed');
@@ -69,4 +68,21 @@ document.addEventListener("DOMContentLoaded", function() {
       infinite: 1,
       slidesToScroll: 1
   });
+
+  var faq_container = document.querySelector('.questions')
+  var questions     = faq_container.querySelectorAll('.question')
+  var questions_cnt = questions.length;
+  for(var i = 0; i < questions_cnt; i++){
+    questions[i].addEventListener('click', function(e){
+      e.preventDefault();
+      var self = this;
+      for(var x = 0; x < questions_cnt; x++){
+        if (questions[x] != self){
+          questions[x].classList.remove('active')
+        }
+      }
+      self.classList.toggle('active');
+    })
+  }
+
 })

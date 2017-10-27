@@ -40,7 +40,7 @@ footer {
   }
   .icons {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     margin: 6vh auto;
     width: 50%;
     .icon {
@@ -55,6 +55,7 @@ footer {
       padding: 2vh;
       transition: all .5s;
       width: 8vh;
+      margin: 0 1vh;
       &:hover {
         background-color: #ef494d;
         color: #fff;
@@ -67,7 +68,10 @@ footer {
     ul {
       display: flex;
       font-weight: bold;
-      justify-content: space-around;
+      justify-content: center;
+      li{
+        margin: 0 2vh;
+      }
     }
   }
   p.copy {

@@ -1,13 +1,18 @@
 header {
   background-attachment: fixed;
+  background-color: #691C20;
   background-image: url(../img/bg.jpg);
   background-position: center -50px;
   background-repeat: no-repeat;
   background-size: cover;
-  min-height: 92vh;
+  min-height: 99vh;
+  border: 0px;
   position: relative;
+  overflow: hidden;
   &:after {
     background-image: url(../img/bg_overlay.svg);
+    box-sizing: unset;
+    border: 0px;
     background-position: center bottom;
     background-repeat: no-repeat;
     background-size: contain;
@@ -16,7 +21,7 @@ header {
     height: 100%;
     position: absolute;
     top: 1px;
-    width: 100%;
+    width: 101%;
     z-index: 0;
   }
   .fixed {
@@ -63,6 +68,8 @@ header {
       text-align: center;
       width: 63%;
       z-index: 999;
+      position: relative;
+      z-index: 1;
       h1 {
         color: #f0f0f0;
         font-family: Helvetica;

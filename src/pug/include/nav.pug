@@ -1,5 +1,5 @@
 nav
   ul
-    each title in menu_items
+    each item in menu_items
       li
-        a(href = "#")= title
+        a(href = `#${item.name}`)= item.title
