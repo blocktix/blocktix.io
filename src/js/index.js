@@ -10,6 +10,8 @@ var isInViewport = function(element) {
 }
 
 document.addEventListener("DOMContentLoaded", function() {
+  var watched = document.querySelectorAll('.scroll_watch')
+
   window.onscroll = function() {
     var scrollPosition = document.documentElement.scrollTop || document.body.scrollTop;
     var element = document.querySelector('header > div.fixed');

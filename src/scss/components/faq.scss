@@ -1,63 +1,66 @@
-.block{
-  &.faq{
+.block {
+  &.faq {
     padding: 20vh 0;
-    h1, h2{
-      text-align: center;
+    h1,
+    h2 {
       font-weight: bold;
+      text-align: center;
     }
-    h1{
+    h1 {
       font-size: 3vh;
     }
-    .questions{
-      width: 100%;
-      box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.14), 0px 3px 1px -2px rgba(0, 0, 0, 0.2), 0px 1px 5px 0px rgba(0, 0, 0, 0.12);
+    .questions {
       border-radius: 4px;
-      .question{
-        .title{
-          position: relative;
-          padding: 1vh 0 1vh 2vh;
-          display: block;
+      box-shadow: 0 2px 2px 0 rgba(0, 0, 0, .14), 0 3px 1px -2px rgba(0, 0, 0, .2), 0 1px 5px 0 rgba(0, 0, 0, .12);
+      width: 100%;
+      .question {
+        .title {
           background-color: #ef494d;
-          color: #ffffff;
-          font-weight: bolder;
-          border-bottom: 1px solid #ffffff;
+          border-bottom: 1px solid #fff;
+          color: #fff;
+          display: block;
           font-size: 3vh;
-          i{
-            right: 0;
-            top: 0px;
-            width: 6.1vh;
-            height: 100%;
-            display: block;
-            position: absolute;
-            text-align: center;
-            padding: 1.5vh 0;
+          font-weight: bolder;
+          padding: 1vh 0 1vh 2vh;
+          position: relative;
+          i {
             background-color: #7b272a;
+            display: block;
+            height: 100%;
+            padding: 1.5vh 0;
+            position: absolute;
+            right: 0;
+            text-align: center;
+            top: 0;
             transform: rotate(-90deg);
-            transition: all 0.5s;;
+            transition: all .5s;
+            width: 6.1vh;;
           }
         }
-        .answer{
-          font-size: 0px;
-          max-height: 0px;
+        .answer {
+          font-size: 0;
           height: auto;
-          transition: max-height 0.5s, opacity 1s;
+          max-height: 0;
           opacity: 0;
-          ul{
+          transition: max-height .5s, opacity 1s;
+          ul {
             list-style-type: disc;
             padding: 0 3vh;
-            li{
+            li {
               padding-bottom: 1vh;
             }
           }
         }
-        &.active{
-          .title{
-            i{ transform: rotate(90deg); }
+        &.active {
+          .title {
+            i {
+              transform: rotate(90deg);
+            }
           }
-          .answer{
-            opacity: 1;
-            max-height: 400px;
+          .answer {
             font-size: 3vh;
+            max-height: 400px;
+            opacity: 1;
             padding: 2vh;
           }
         }

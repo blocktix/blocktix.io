@@ -1,21 +1,21 @@
 header {
   background-attachment: fixed;
-  background-color: #691C20;
+  background-color: #691c20;
   background-image: url(../img/bg.jpg);
   background-position: center -50px;
   background-repeat: no-repeat;
   background-size: cover;
+  border: 0;
   min-height: 99vh;
-  border: 0px;
-  position: relative;
   overflow: hidden;
+  position: relative;
   &:after {
     background-image: url(../img/bg_overlay.svg);
-    box-sizing: unset;
-    border: 0px;
     background-position: center bottom;
     background-repeat: no-repeat;
     background-size: contain;
+    border: 0;
+    box-sizing: unset;
     content: '';
     display: block;
     height: 100%;
@@ -65,10 +65,10 @@ header {
     section {
       color: #fff;
       margin: 15vh auto 5vh auto;
+      position: relative;
       text-align: center;
       width: 63%;
       z-index: 999;
-      position: relative;
       z-index: 1;
       h1 {
         color: #f0f0f0;
