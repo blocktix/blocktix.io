@@ -17,8 +17,8 @@ footer {
     text-align: center;
   }
   form {
-    max-width: 700px;
     margin: 0 auto;
+    max-width: 700px;
     text-align: center;
     input[type='email'] {
       background: transparent;
@@ -44,8 +44,8 @@ footer {
     display: flex;
     justify-content: center;
     margin: 6vh auto;
-    width: 50%;
     max-width: 600px;
+    width: 50%;
     .icon {
       align-items: center;
       background: #fff;
@@ -56,11 +56,11 @@ footer {
       height: 8vh;
       justify-content: center;
       margin: 0 1vh;
+      max-height: 64px;
+      max-width: 64px;
       padding: 2vh;
       transition: all .5s;
       width: 8vh;
-      max-width: 64px;
-      max-height: 64px;
       &:hover {
         background-color: #ef494d;
         color: #fff;

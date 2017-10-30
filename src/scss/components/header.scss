@@ -107,12 +107,12 @@ header {
   }
 }
 
-@media(max-width: 800px){
-  header{
-    .fixed{
+@media(max-width: 800px) {
+  header {
+    .fixed {
       position: relative;
     }
-    nav{
+    nav {
       display: none;
     }
   }

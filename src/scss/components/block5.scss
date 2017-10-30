@@ -30,26 +30,26 @@
   }
 }
 
-@media(max-width: 800px){
-  .block{
-    &.block5{
+@media(max-width: 800px) {
+  .block {
+    &.block5 {
       background-position: 0 85%;
       background-size: contain;
-      .row{
+      .row {
         flex-direction: column;
-        .overview{
-          order: 2;
+        .overview {
           margin-top: 20vh;
+          order: 2;
         }
-        .visual{
+        .visual {
           order: 1;
           width: 100%;
-          img{
-            margin: 0px;
+          img {
+            margin: 0;
             width: 40%;
           }
         }
-        .overview{
+        .overview {
           width: 100%;
         }
       }

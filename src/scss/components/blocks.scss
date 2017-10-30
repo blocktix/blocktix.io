@@ -38,14 +38,14 @@ $point-size: 33px;
     justify-content: center;
     width: $point-size;
   }
-  .btn{
-    background: #EF494D;
+  .btn {
+    background: #ef494d;
     border-radius: 4px;
+    color: #fff;
+    font-size: 1.4vh;
     /*font-family: Helvetica-Bold;*/
     font-weight: bolder;
-    font-size: 1.4vh;
-    color: #FFFFFF;
+    letter-spacing: -.009vh;
     padding: 1vh 2.9vh;
-    letter-spacing: -0.009vh;
   }
 }

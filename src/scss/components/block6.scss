@@ -31,33 +31,33 @@
   }
 }
 
-@media(max-width: 800px){
-  .block{
-    &.block6{
-      padding-top: 0px;
-      background-size: 100%;
+@media(max-width: 800px) {
+  .block {
+    &.block6 {
       background-position: 0 34%;
-      h2{
+      background-size: 100%;
+      padding-top: 0;
+      h2 {
         margin-top: 6vh;
       }
-      .row{
-        margin-top: 6vh;
+      .row {
         flex-direction: column;
-        .col{
+        margin-top: 6vh;
+        .col {
           width: 100%;
-          &.visual{
+          &.visual {
+            margin-bottom: 4vh;
             order: 1;
             text-align: center;
-            margin-bottom: 4vh;
-            img{
-              margin: 0px;
+            img {
+              margin: 0;
               width: 50%;
             }
           }
-          &.overview{
-            order: 2;
-            margin-top: 19vh;
+          &.overview {
             margin-bottom: 10vh;
+            margin-top: 19vh;
+            order: 2;
           }
         }
       }

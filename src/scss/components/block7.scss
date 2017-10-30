@@ -36,23 +36,23 @@
   }
 }
 
-@media(max-width: 800px){
-  .block{
-    &.block7{
+@media(max-width: 800px) {
+  .block {
+    &.block7 {
       background-size: 100%;
       padding-top: 10vh;
-      & > p{
-        width: 80%;
+      & > p {
         font-weight: bolder;
+        width: 80%;
       }
-      .row{
-        flex-direction: column;
-        margin: 0px;
-        justify-content: center;
+      .row {
         align-items: center;
-        .col{
-          width: 50%;
+        flex-direction: column;
+        justify-content: center;
+        margin: 0;
+        .col {
           padding-top: 5vh;
+          width: 50%;
         }
       }
     }
