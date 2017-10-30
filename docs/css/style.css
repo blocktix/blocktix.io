@@ -1358,6 +1358,10 @@ header .wrapper section .buttons .btn {
     -ms-flex-preferred-size: 40px;
   }
 
+  header {
+    background-attachment: scroll;
+  }
+
   header .fixed {
     position: relative;
   }
