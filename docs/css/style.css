@@ -1408,8 +1408,8 @@ header .mobile {
     -webkit-box-align: left;
     -webkit-box-direction: normal;
     -webkit-box-orient: horizontal;
-    -webkit-box-pack: justify;
     -webkit-box-pack: center;
+    -webkit-box-pack: justify;
     -ms-flex-align: left;
     -ms-flex-direction: row;
     -ms-flex-pack: center;
