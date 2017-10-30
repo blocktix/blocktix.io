@@ -1,6 +1,6 @@
 .block {
   &.block5 {
-    background-image: url(../img/block_gray_bg_rotate.svg?r);
+    background-image: url(../img/block_gray_bg_rotate.svg?rnd=22);
     background-position: top left;
     background-repeat: no-repeat;
     background-size: 55%;
@@ -25,6 +25,33 @@
       .overview {
         order: 1;
         width: 50%;
+      }
+    }
+  }
+}
+
+@media(max-width: 800px){
+  .block{
+    &.block5{
+      background-position: 0 85%;
+      background-size: contain;
+      .row{
+        flex-direction: column;
+        .overview{
+          order: 2;
+          margin-top: 20vh;
+        }
+        .visual{
+          order: 1;
+          width: 100%;
+          img{
+            margin: 0px;
+            width: 40%;
+          }
+        }
+        .overview{
+          width: 100%;
+        }
       }
     }
   }

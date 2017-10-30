@@ -35,3 +35,26 @@
     }
   }
 }
+
+@media(max-width: 800px){
+  .block{
+    &.block7{
+      background-size: 100%;
+      padding-top: 10vh;
+      & > p{
+        width: 80%;
+        font-weight: bolder;
+      }
+      .row{
+        flex-direction: column;
+        margin: 0px;
+        justify-content: center;
+        align-items: center;
+        .col{
+          width: 50%;
+          padding-top: 5vh;
+        }
+      }
+    }
+  }
+}

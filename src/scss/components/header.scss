@@ -106,3 +106,14 @@ header {
     }
   }
 }
+
+@media(max-width: 800px){
+  header{
+    .fixed{
+      position: relative;
+    }
+    nav{
+      display: none;
+    }
+  }
+}

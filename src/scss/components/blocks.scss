@@ -38,4 +38,14 @@ $point-size: 33px;
     justify-content: center;
     width: $point-size;
   }
+  .btn{
+    background: #EF494D;
+    border-radius: 4px;
+    /*font-family: Helvetica-Bold;*/
+    font-weight: bolder;
+    font-size: 1.4vh;
+    color: #FFFFFF;
+    padding: 1vh 2.9vh;
+    letter-spacing: -0.009vh;
+  }
 }

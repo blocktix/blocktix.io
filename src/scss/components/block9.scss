@@ -28,3 +28,19 @@
     }
   }
 }
+
+@media(max-width: 800px){
+  .block{
+    &.block9{
+      .row{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        .col{
+          width: 80%;
+          margin-top: 5vh;
+        }
+      }
+    }
+  }
+}

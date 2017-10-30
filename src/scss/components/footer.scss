@@ -17,15 +17,17 @@ footer {
     text-align: center;
   }
   form {
+    max-width: 700px;
+    margin: 0 auto;
     text-align: center;
     input[type='email'] {
       background: transparent;
       border: 1px solid #fff;
       border-right: 0;
       color: #fff;
-      font-size: 2vh;
+      font-size: 1.5vh;
       margin: 0;
-      padding: 3vh 2vh;
+      padding: 2vh 2vh;
       width: 70%;
     }
     input[type='submit'] {
@@ -34,7 +36,7 @@ footer {
       margin: 0;
       margin-left: -.5vh;
       margin-top: -.2vh;
-      padding: 3.3vh;
+      padding: 2vh;
       text-transform: uppercase;
     }
   }
@@ -43,6 +45,7 @@ footer {
     justify-content: center;
     margin: 6vh auto;
     width: 50%;
+    max-width: 600px;
     .icon {
       align-items: center;
       background: #fff;
@@ -56,6 +59,8 @@ footer {
       padding: 2vh;
       transition: all .5s;
       width: 8vh;
+      max-width: 64px;
+      max-height: 64px;
       &:hover {
         background-color: #ef494d;
         color: #fff;
