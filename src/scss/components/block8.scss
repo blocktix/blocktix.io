@@ -1,4 +1,4 @@
-$slider_width: 120vh;
+$slider_width: 129vh;
 .block {
   &.block8 {
     background-image: url(../img/block_gray_bg.svg);
@@ -38,8 +38,8 @@ $slider_width: 120vh;
           content: '';
           display: block;
           height: 4px;
-          /*margin-left: -2px;
-          margin-top: -2px;*/
+          margin-left: -2px;
+          margin-top: -2px;
           width: 4px;
         }
       }
@@ -58,7 +58,7 @@ $slider_width: 120vh;
         margin: 0 10px;
         overflow: hidden;
         padding: 2.2vh;
-        width: 50vh;
+        width: 53vh;
         .card-header {
           display: flex;
           flex-direction: row;
@@ -124,6 +124,15 @@ $slider_width: 120vh;
     &.block8 {
       background-image: none;
       padding-top: 30vh;
+      .cards {
+        .card {
+          width: 50vh;
+        }
+      }
+      .frame {
+        margin-left: calc(100% - 120vh);
+        width: 120vh;
+      }
     }
   }
 }

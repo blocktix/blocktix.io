@@ -25,12 +25,14 @@ var debounce = function(func, wait, immediate) {
 }
 
 document.addEventListener("DOMContentLoaded", function() {
+  var menu = document.querySelector('.mobile')
   var elements = Array.from(document.querySelectorAll('.scroll_watch'))
   Array.prototype.forEach.call(document.querySelectorAll('.navigation_link'), function(li){
     li.querySelector('a').addEventListener('click', function(event){
       event.preventDefault()
       li.classList.add('active')
       scrollIt(document.querySelector(this.hash), 1000, 'easeInOutQuint')
+      menu.classList.remove('active');
     });
   });
   var scroll_watch = debounce(function(){
@@ -122,5 +124,11 @@ document.addEventListener("DOMContentLoaded", function() {
       self.classList.toggle('active');
     })
   }
+
+
+  document.querySelector('.toggle_menu').addEventListener('click', function(e){
+    e.preventDefault();
+    menu.classList.toggle('active');
+  })
 
 })

@@ -6,6 +6,14 @@
   src: url(../font/icons.eot#iefix) format('embedded-opentype'),url(../font/icons.woff2) format('woff2'),url(../font/icons.woff) format('woff'),url(../font/icons.ttf) format('truetype'),url(../font/icons.svg#icons) format('svg');
 }
 
+@font-face {
+  font-family: Gotham;
+  font-style: normal;
+  font-weight: 700;
+  src: url(../font/GothamBold.eot);
+  src: url(../font/GothamBold.eot?#iefix) format('embedded-opentype'),url(../font/GothamBold.woff2) format('woff2'),url(../font/GothamBold.woff) format('woff'),url(../font/GothamBold.ttf) format('truetype'),url(../font/GothamBold.svg#GothamBold) format('svg');
+}
+
 body,
 html {
   margin: 0;
@@ -71,6 +79,11 @@ a {
   text-decoration: none;
 }
 
+h1,
+h2 {
+  font-family: Gotham;
+}
+
 .icon_logo:before {
   content: '\EA01';
 }
@@ -105,6 +118,10 @@ a {
 
 .icon_chevron-right:before {
   content: '\EA09';
+}
+
+.icon_bars:before {
+  content: '\EA0A';
 }
 
 [class*=icon_]:after,
@@ -456,6 +473,8 @@ a {
   content: '';
   display: block;
   height: 4px;
+  margin-left: -2px;
+  margin-top: -2px;
   width: 4px;
 }
 
@@ -474,7 +493,7 @@ a {
   margin: 0 10px;
   overflow: hidden;
   padding: 2.2vh;
-  width: 50vh;
+  width: 53vh;
   -webkit-box-orient: vertical;
   -webkit-box-pack: start;
   -ms-flex-direction: column;
@@ -543,11 +562,11 @@ a {
 .block.block8 .frame {
   font-size: 0;
   line-height: 0;
-  margin-left: calc(100% - 120vh);
+  margin-left: calc(100% - 129vh);
   overflow: hidden;
   position: relative;
   white-space: nowrap;
-  width: 120vh;
+  width: 129vh;
 }
 
 .block.block8 .slides,
@@ -611,8 +630,8 @@ a {
 }
 
 .block h1 {
-  font-size: 2.9vh;
-  padding-bottom: 1.5vh;
+  font-size: 2.4vh;
+  padding-bottom: 1.5vw;
 }
 
 .block h1,
@@ -623,7 +642,7 @@ a {
 }
 
 .block h2 {
-  font-size: 2.5vh;
+  font-size: 2.1vh;
 }
 
 .block h2.red {
@@ -631,7 +650,9 @@ a {
 }
 
 .block p {
-  padding-bottom: 2vh;
+  font-size: 2vh;
+  line-height: 140%;
+  padding-bottom: 1.2vw;
 }
 
 .block .point {
@@ -663,10 +684,9 @@ a {
   background: #ef494d;
   border-radius: 4px;
   color: #fff;
-  font-size: 1.4vh;
+  font-size: 2vh;
   font-weight: bolder;
-  letter-spacing: -.009vh;
-  padding: 1vh 2.9vh;
+  padding: .8vh 2.3vh;
 }
 
 .block.faq {
@@ -841,7 +861,7 @@ footer .icons .icon {
   background: #fff;
   border-radius: 5px;
   color: #4e4e4e;
-  font-size: 4vh;
+  font-size: 3vh;
   height: 8vh;
   margin: 0 1vh;
   max-height: 34px;
@@ -924,7 +944,7 @@ header:after {
 }
 
 header .fixed {
-  padding: 0;
+  padding: .6vw;
   position: fixed;
   transition: all 1s;
   width: 100%;
@@ -951,6 +971,16 @@ header .fixed .wrapper .logo {
   color: #fff;
 }
 
+header .fixed .wrapper a.toggle_menu {
+  cursor: pointer;
+  display: none;
+}
+
+header .fixed .wrapper a.toggle_menu i.icon_bars {
+  color: #fff;
+  font-size: 2.7vh;
+}
+
 header .fixed .wrapper nav ul {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -962,12 +992,17 @@ header .fixed .wrapper nav ul {
 }
 
 header .fixed .wrapper nav ul li {
-  font-size: 1.6vh;
-  padding: 1vh 2.3vh;
+  font-size: 1vw;
+  padding: .4vw 1vw;
+}
+
+header .fixed .wrapper nav ul li.background {
+  background-color: hsla(0,0%,100%,.25);
+  border-radius: 4px;
 }
 
 header .fixed .wrapper nav ul li.active {
-  background-color: hsla(0,0%,100%,.25);
+  font-weight: bolder;
 }
 
 header .fixed .wrapper nav ul li a {
@@ -981,7 +1016,7 @@ header .wrapper section {
   margin: 25vh auto 5vh;
   position: relative;
   text-align: center;
-  width: 63%;
+  width: 50%;
   z-index: 3;
   z-index: 1;
 }
@@ -989,15 +1024,17 @@ header .wrapper section {
 header .wrapper section h1 {
   color: #f0f0f0;
   font-family: Helvetica;
-  font-size: 3.5vh;
+  font-size: 4.2vh;
   font-weight: 400;
   line-height: 110%;
   padding-bottom: 2vh;
 }
 
 header .wrapper section p {
-  font-size: 1.9vh;
-  padding-bottom: 1vh;
+  font-size: 1.6vh;
+  margin: 0 auto;
+  padding-top: 2vh;
+  width: 90%;
 }
 
 header .wrapper section p.thin {
@@ -1008,11 +1045,11 @@ header .wrapper section .buttons {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  justify-content: space-evenly;
-  margin: 5vh auto 0;
+  justify-content: center;
+  margin: 1.5vw auto 0;
   width: 60%;
-  -webkit-box-pack: space-evenly;
-  -ms-flex-pack: space-evenly;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
 }
 
 header .wrapper section .buttons .btn {
@@ -1020,12 +1057,20 @@ header .wrapper section .buttons .btn {
   border-radius: 5px;
   color: #fff;
   cursor: pointer;
-  font-size: 1.6vh;
+  font-size: 1.4vh;
   font-weight: 500;
   margin-left: .5vh;
   padding: .9vh 4vh;
   text-decoration: none;
   white-space: nowrap;
+}
+
+header .wrapper section .buttons .btn:first-child {
+  margin-right: 1vw;
+}
+
+header .mobile {
+  display: none;
 }
 
 @media (max-width:1200px) {
@@ -1312,6 +1357,15 @@ header .wrapper section .buttons .btn {
     padding-top: 30vh;
   }
 
+  .block.block8 .cards .card {
+    width: 50vh;
+  }
+
+  .block.block8 .frame {
+    margin-left: calc(100% - 120vh);
+    width: 120vh;
+  }
+
   .block.block9 .row {
     align-items: center;
     flex-direction: column;
@@ -1342,11 +1396,45 @@ header .wrapper section .buttons .btn {
     background-attachment: scroll;
   }
 
-  header .fixed {
-    position: relative;
+  header .wrapper section {
+    width: 95%;
   }
 
-  header nav {
+  header .fixed .wrapper {
+    align-items: left;
+    flex-direction: row;
+    justify-content: center;
+    justify-content: space-between;
+    -webkit-box-align: left;
+    -webkit-box-direction: normal;
+    -webkit-box-orient: horizontal;
+    -webkit-box-pack: justify;
+    -webkit-box-pack: center;
+    -ms-flex-align: left;
+    -ms-flex-direction: row;
+    -ms-flex-pack: center;
+    -ms-flex-pack: justify;
+  }
+
+  header .fixed .wrapper nav {
     display: none;
+  }
+
+  header .fixed .wrapper a.toggle_menu {
+    display: block;
+  }
+
+  header .fixed .mobile {
+    background: rgba(0,0,0,.7);
+  }
+
+  header .fixed .mobile.active {
+    display: block;
+  }
+
+  header .fixed .mobile ul li {
+    color: #fff;
+    padding: 1vh 0;
+    text-align: center;
   }
 }

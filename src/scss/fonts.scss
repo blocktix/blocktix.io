@@ -9,3 +9,15 @@
   url('../font/icons.ttf') format('truetype'),
   url('../font/icons.svg#icons') format('svg');
 }
+
+@font-face {
+  font-family: 'Gotham';
+  font-style: normal;
+  font-weight: bold;
+  src: url('../font/GothamBold.eot');
+  src: url('../font/GothamBold.eot?#iefix') format('embedded-opentype'),
+  url('../font/GothamBold.woff2') format('woff2'),
+  url('../font/GothamBold.woff') format('woff'),
+  url('../font/GothamBold.ttf') format('truetype'),
+  url('../font/GothamBold.svg#GothamBold') format('svg');
+}

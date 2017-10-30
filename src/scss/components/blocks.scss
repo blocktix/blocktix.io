@@ -5,14 +5,14 @@ $point-size: 33px;
   font-weight: 200;
   h1 {
     color: #394e57;
-    font-size: 2.9vh;
+    font-size: 2.4vh;
     font-weight: bolder;
-    padding-bottom: 1.5vh;
+    padding-bottom: 1.5vw;
     text-transform: uppercase;
   }
   h2 {
     color: #394e57;
-    font-size: 2.5vh;
+    font-size: 2.1vh;
     font-weight: bolder;
     text-transform: uppercase;
     &.red {
@@ -20,7 +20,9 @@ $point-size: 33px;
     }
   }
   p {
-    padding-bottom: 2vh;
+    font-size: 2vh;
+    line-height: 140%;
+    padding-bottom: 1.2vw;
   }
   .point {
     align-items: center;
@@ -42,11 +44,9 @@ $point-size: 33px;
     background: #ef494d;
     border-radius: 4px;
     color: #fff;
-    font-size: 1.4vh;
-    /*font-family: Helvetica-Bold;*/
+    font-size: 2vh;
     font-weight: bolder;
-    letter-spacing: -.009vh;
-    padding: 1vh 2.9vh;
+    padding: .8vh 2.3vh;
   }
 }
 

@@ -1,5 +1,9 @@
 nav
   ul
     each item in menu_items
-      li.navigation_link
-        a(href = `#${item.name}`)= item.title
+      if item.name == 'signup'
+        li.background
+          a(href = `#${item.name}`)= item.title
+      else
+        li.navigation_link
+          a(href = `#${item.name}`)= item.title
