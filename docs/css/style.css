@@ -745,9 +745,9 @@ body {
   height: auto;
   max-height: 0;
   opacity: 0;
-  transition: max-height .5s, opacity 1s;
-  -webkit-transition: max-height .5s, opacity 1s;
-  -o-transition: max-height .5s, opacity 1s;
+  transition: max-height 1s, opacity 1.5s;
+  -webkit-transition: max-height 1s, opacity 1.5s;
+  -o-transition: max-height 1s, opacity 1.5s;
 }
 
 .block.faq .questions .question .answer ul {

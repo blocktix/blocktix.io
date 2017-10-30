@@ -120,9 +120,6 @@
           }
         }
         self.classList.toggle('active');
-        setTimeout(function () {
-          scrollIt(self, 1000, 'easeInOutQuint');
-        }, 250);
       });
     }
   });
