@@ -72,7 +72,8 @@ gulp.task('build-js', () => {
 
 gulp.task('copy-img', () => {
   return gulp.src([
-    `${sourceDirectory}img/*.{jpg,jpeg,png,svg,gif,ico}`,
+    `${sourceDirectory}img/*.{jpg,jpeg,png,svg,gif,ico,json}`,
+    `${sourceDirectory}img/**/*.{jpg,jpeg,png,svg,gif,ico,json,xml}`,
     ...getPluginsPaths('img')
   ])
     .pipe(gulp.dest(`${buildDirectory}img`))
