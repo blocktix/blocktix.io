@@ -49,6 +49,7 @@ gulp.task('build-css', () => {
       cascade: false
     }))
     .pipe($.concat('style.css'))
+    .pipe($.cssnano())
     .pipe(gulp.dest(`${buildDirectory}css`))
     .pipe($.connect.reload());
 });
