@@ -56,11 +56,12 @@
       }
     }
     &.block2 {
-      background-position: 0 60%;
+      background-image: url(../img/block_gray_bg_small_rotate.svg);
+      background-position: 0 50%;
       background-size: 100%;
-      padding-top: 2vh;
+      padding-top: 0vh;
       .overview {
-        padding-top: 25vh;
+        padding-top: 13vh;
       }
     }
   }

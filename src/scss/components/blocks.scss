@@ -49,3 +49,14 @@ $point-size: 33px;
     padding: 1vh 2.9vh;
   }
 }
+
+@media(max-width: 800px) {
+  .block {
+    .point {
+      flex-basis: 40px;
+      font-size: 1.6vh;
+      height: 40px;
+      width: 40px;
+    }
+  }
+}

@@ -39,6 +39,7 @@
 @media(max-width: 800px) {
   .block {
     &.block7 {
+      background-image: url(../img/block_gray_bg_small.svg);
       background-size: 100%;
       padding-top: 10vh;
       & > p {

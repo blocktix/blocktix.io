@@ -33,7 +33,8 @@
 @media(max-width: 800px) {
   .block {
     &.block5 {
-      background-position: 0 85%;
+      background-image: url(../img/block_gray_bg_small.svg);
+      background-position: 0 185%;
       background-size: contain;
       .row {
         flex-direction: column;

@@ -472,10 +472,9 @@ body {
   font-size: 2.4vh;
   justify-content: flex-start;
   margin: 0 10px;
-  min-height: 130px;
   overflow: hidden;
-  padding: 1.2vh;
-  width: 300px;
+  padding: 2.2vh;
+  width: 50vh;
   -webkit-box-direction: normal;
   -webkit-box-orient: vertical;
   -webkit-box-pack: start;
@@ -516,11 +515,11 @@ body {
 
 .block.block8 .cards .card .card-header .person div {
   font-size: 1.8vh;
-  height: 2vh;
+  height: 2.5vh;
 }
 
 .block.block8 .cards .card .card-header .person div.name {
-  font-weight: bold;
+  font-weight: bolder;
   margin-top: 1vh;
 }
 
@@ -533,7 +532,7 @@ body {
   color: #676767;
   display: block;
   font-size: 1.8vh;
-  line-height: 100%;
+  line-height: 120%;
   min-height: 10vh;
   white-space: wrap;
   white-space: normal;
@@ -542,11 +541,11 @@ body {
 .block.block8 .frame {
   font-size: 0;
   line-height: 0;
-  margin-left: calc(100% - 80vh);
+  margin-left: calc(100% - 120vh);
   overflow: hidden;
   position: relative;
   white-space: nowrap;
-  width: 80vh;
+  width: 120vh;
 }
 
 .block.block8 .slides {
@@ -685,6 +684,7 @@ body {
 .block.faq .questions {
   border-radius: 4px;
   box-shadow: 0 2px 2px 0 rgba(0, 0, 0, .14), 0 3px 1px -2px rgba(0, 0, 0, .2), 0 1px 5px 0 rgba(0, 0, 0, .12);
+  margin-top: 3vh;
   width: 100%;
   -webkit-box-shadow: 0 2px 2px 0 rgba(0, 0, 0, .14), 0 3px 1px -2px rgba(0, 0, 0, .2), 0 1px 5px 0 rgba(0, 0, 0, .12);
 }
@@ -820,6 +820,7 @@ footer form {
 footer form input[type='email'] {
   background: transparent;
   border: 1px solid #fff;
+  border-radius: 0;
   border-right: 0;
   color: #fff;
   font-size: 1.5vh;
@@ -1118,13 +1119,14 @@ header .wrapper section .buttons .btn {
   }
 
   .block.block2 {
-    background-position: 0 60%;
+    background-image: url(../img/block_gray_bg_small_rotate.svg);
+    background-position: 0 50%;
     background-size: 100%;
-    padding-top: 2vh;
+    padding-top: 0vh;
   }
 
   .block.block2 .overview {
-    padding-top: 25vh;
+    padding-top: 13vh;
   }
 
   .block3 .tree,
@@ -1217,7 +1219,8 @@ header .wrapper section .buttons .btn {
   }
 
   .block.block5 {
-    background-position: 0 85%;
+    background-image: url(../img/block_gray_bg_small.svg);
+    background-position: 0 185%;
     background-size: contain;
   }
 
@@ -1295,6 +1298,7 @@ header .wrapper section .buttons .btn {
   }
 
   .block.block7 {
+    background-image: url(../img/block_gray_bg_small.svg);
     background-size: 100%;
     padding-top: 10vh;
   }
@@ -1323,6 +1327,11 @@ header .wrapper section .buttons .btn {
     width: 50%;
   }
 
+  .block.block8 {
+    background-image: none;
+    padding-top: 30vh;
+  }
+
   .block.block9 .row {
     align-items: center;
     flex-direction: column;
@@ -1339,6 +1348,14 @@ header .wrapper section .buttons .btn {
   .block.block9 .row .col {
     margin-top: 5vh;
     width: 80%;
+  }
+
+  .block .point {
+    flex-basis: 40px;
+    font-size: 1.6vh;
+    height: 40px;
+    width: 40px;
+    -ms-flex-preferred-size: 40px;
   }
 
   header .fixed {
