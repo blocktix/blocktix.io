@@ -25,7 +25,7 @@
       justify-content: space-between;
       &:nth-child(2n + 1) {
         .point {
-          margin-left: 2vh;
+          margin-left: 1.6vh;
         }
       }
       .col {
@@ -50,7 +50,7 @@
             order: 1;
           }
           &.description {
-            margin-left: -26px;
+            margin-left: -4.6vh;
             text-align: right;
           }
         }
@@ -109,6 +109,28 @@
             }
           }
         }
+      }
+    }
+  }
+}
+
+@media(max-width: 1100px) {
+  .block {
+    &.block3,
+    &.block4 {
+      .tree {
+        width: 85%;
+      }
+    }
+  }
+}
+
+@media(max-width: 1400px) and (min-width: 1101px) {
+  .block {
+    &.block3,
+    &.block4 {
+      .tree {
+        width: 65%;
       }
     }
   }

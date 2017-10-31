@@ -1,5 +1,5 @@
 {
-  "name": "project",
+  "name": "BlockTIX",
   "version": "1.0.0",
   "description": "",
   "main": "gulpfile.js",
@@ -7,7 +7,7 @@
     "start": "gulp watch",
     "build": "gulp build"
   },
-  "author": "Dmitriy Kovalev <dimalolzet@gmail.com>",
+  "author": "Strzhyhotski Artem <aa.temkin@gmail.com>",
   "license": "ISC",
   "devDependencies": {
     "babel-core": "^6.26.0",

@@ -67,6 +67,7 @@ gulp.task('build-js', () => {
     .pipe($.plumber())
     .pipe($.concat('script.js'))
     .pipe($.babel())
+    .pipe($.uglify())
     .pipe(gulp.dest(`${buildDirectory}js`))
     .pipe($.connect.reload());
 });

@@ -244,7 +244,7 @@ h2 {
 }
 
 .block .tree .row:nth-child(odd) .point {
-  margin-left: 2vh;
+  margin-left: 1.6vh;
 }
 
 .block .tree .row .col {
@@ -282,7 +282,7 @@ h2 {
 }
 
 .block .tree .row .col:first-child.description {
-  margin-left: -26px;
+  margin-left: -4.6vh;
   text-align: right;
 }
 
@@ -684,8 +684,10 @@ h2 {
   background: #ef494d;
   border-radius: 4px;
   color: #fff;
+  display: inline-block;
   font-size: 2vh;
   font-weight: bolder;
+  margin-top: 2vh;
   padding: .8vh 2.3vh;
 }
 
@@ -985,10 +987,10 @@ header .fixed .wrapper nav ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
   list-style-type: none;
-  -webkit-box-pack: space-evenly;
-  -ms-flex-pack: space-evenly;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
 }
 
 header .fixed .wrapper nav ul li {
@@ -1093,6 +1095,11 @@ header .mobile {
 @media (max-width:1100px) {
   .block.block2 {
     padding-top: 24vh;
+  }
+
+  .block.block3 .tree,
+  .block.block4 .tree {
+    width: 85%;
   }
 }
 
@@ -1400,19 +1407,21 @@ header .mobile {
     width: 95%;
   }
 
+  header .fixed {
+    padding: 0;
+  }
+
   header .fixed .wrapper {
-    align-items: left;
+    align-items: center;
     flex-direction: row;
-    justify-content: center;
     justify-content: space-between;
-    -webkit-box-align: left;
+    margin: 1vh 2vh;
+    -webkit-box-align: center;
     -webkit-box-direction: normal;
     -webkit-box-orient: horizontal;
-    -webkit-box-pack: center;
     -webkit-box-pack: justify;
-    -ms-flex-align: left;
+    -ms-flex-align: center;
     -ms-flex-direction: row;
-    -ms-flex-pack: center;
     -ms-flex-pack: justify;
   }
 
@@ -1434,7 +1443,25 @@ header .mobile {
 
   header .fixed .mobile ul li {
     color: #fff;
+    padding: 0;
     padding: 1vh 0;
     text-align: center;
+  }
+
+  header .fixed .mobile ul li:hover {
+    background: #000;
+  }
+
+  header .fixed .mobile ul li a {
+    display: block;
+    height: 2vh;
+    width: 100%;
+  }
+}
+
+@media (max-width:1400px) and (min-width:1101px) {
+  .block.block3 .tree,
+  .block.block4 .tree {
+    width: 65%;
   }
 }
