@@ -39,8 +39,8 @@ document.addEventListener("DOMContentLoaded", function() {
       var top = e.offsetTop
       var bottom = top + e.offsetHeight
       sections[e.id] = {
-        top: top - top * 0.09,
-        bottom: bottom - bottom * 0.1
+        top: top * 0.91,
+        bottom: bottom * 0.9
       }
     });
     for (i in sections) {
