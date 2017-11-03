@@ -12,13 +12,13 @@ $point-size: 33px;
   }
   h2 {
     color: #394e57;
+    font-family: 'Helvetica';
     font-size: 2.1vh;
     font-weight: bolder;
     text-transform: uppercase;
-    font-family: 'Helvetica';
     &.red {
-      font-family: 'Gotham';
       color: #ef494d;
+      font-family: 'Gotham';
       font-size: 3vh;
     }
   }

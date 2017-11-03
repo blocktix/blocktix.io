@@ -12,15 +12,15 @@ $element_with_padding: 40.2vh;
     padding-bottom: 15vh;
     padding-top: 35vh;
     h2 {
-      margin-top: -15vh;
       margin-bottom: 7vh;
+      margin-top: -15vh;
       text-align: center;
     }
     ul.navigation {
       align-items: center;
       display: flex;
       justify-content: center;
-      margin-top: 0px;
+      margin-top: 0;
       li {
         border-radius: 50px;
         cursor: pointer;
@@ -50,14 +50,14 @@ $element_with_padding: 40.2vh;
     .cards {
       display: flex;
       margin: 3vh auto 0 auto;
-      width: $element_with_padding * 3;
       overflow: hidden;
       padding-bottom: 5vh;
+      width: $element_with_padding * 3;
       li {
         display: inline-block;
+        flex-shrink: 0;
         position: relative;
         width: $element;
-        flex-shrink: 0;
       }
       .card {
         background-color: #fff;
@@ -112,20 +112,20 @@ $element_with_padding: 40.2vh;
   }
 }
 
-@media(min-width: 1400px){
-  .block{
-    &.block8{
-      .cards{
+@media(min-width: 1400px) {
+  .block {
+    &.block8 {
+      .cards {
         width: $element_with_padding * 4;
       }
     }
   }
 }
 
-@media(max-width: 1100px){
-  .block{
-    &.block8{
-      .cards{
+@media(max-width: 1100px) {
+  .block {
+    &.block8 {
+      .cards {
         width: $element_with_padding * 2;
       }
     }
