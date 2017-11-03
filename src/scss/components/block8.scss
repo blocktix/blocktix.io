@@ -84,16 +84,16 @@ $element_with_padding: 40.2vh;
             flex-direction: column;
             flex-wrap: wrap;
             line-height: auto;
-            margin-left: 1vh;
+            margin-left: 3vh;
             div {
-              font-size: 1.8vh;
+              font-size: 1.4vh;
               height: 2.2vh;
               &.name {
-                font-weight: bolder;
+                font-weight: bold;
               }
               &.position {
                 color: #bababa;
-                font-size: 1.7vh;
+                font-size: 1.2vh;
               }
             }
           }

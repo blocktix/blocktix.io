@@ -543,7 +543,7 @@ h2 {
   flex-direction: column;
   flex-wrap: wrap;
   line-height: auto;
-  margin-left: 1vh;
+  margin-left: 3vh;
   -webkit-box-direction: normal;
   -webkit-box-orient: vertical;
   -ms-flex-direction: column;
@@ -551,17 +551,17 @@ h2 {
 }
 
 .block.block8 .cards .card .card-header .person div {
-  font-size: 1.8vh;
+  font-size: 1.4vh;
   height: 2.2vh;
 }
 
 .block.block8 .cards .card .card-header .person div.name {
-  font-weight: bolder;
+  font-weight: 700;
 }
 
 .block.block8 .cards .card .card-header .person div.position {
   color: #bababa;
-  font-size: 1.7vh;
+  font-size: 1.2vh;
 }
 
 .block.block8 .cards .card .card-content {
