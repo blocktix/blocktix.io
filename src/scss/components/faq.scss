@@ -33,7 +33,7 @@
             padding: 1vh 2vh;
             /*background-color: #7b272a;*/
             text-align: center;
-            transform: rotate(-90deg);
+            transform: rotate(90deg);
             transition: all .5s;
             white-space: nowrap;
             width: 40px;
@@ -63,7 +63,7 @@
         &.active {
           .title {
             i {
-              transform: rotate(90deg);
+              transform: rotate(270deg);
             }
           }
           .answer {

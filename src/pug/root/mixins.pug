@@ -8,3 +8,12 @@ mixin text(count = 10)
       .join('');
 
   = text
+
+mixin card(member)
+  .card
+    .card-header
+      img(src= memberImage(member))
+      .person
+        div.name= member.name
+        div.position= member.position
+    .card-content= member.description

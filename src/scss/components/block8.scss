@@ -1,4 +1,7 @@
-$slider_width: 129vh;
+/*$slider_width: 129vh;*/
+$slider_width: 80%;
+$element: 40vh;
+$element_with_padding: 40.2vh;
 .block {
   &.block8 {
     background-image: url(../img/block_gray_bg.svg);
@@ -9,15 +12,15 @@ $slider_width: 129vh;
     padding-bottom: 15vh;
     padding-top: 35vh;
     h2 {
-      margin-top: -20vh;
+      margin-top: -15vh;
+      margin-bottom: 7vh;
       text-align: center;
     }
-
     ul.navigation {
       align-items: center;
       display: flex;
       justify-content: center;
-      margin-top: 9vh;
+      margin-top: 0px;
       li {
         border-radius: 50px;
         cursor: pointer;
@@ -45,11 +48,21 @@ $slider_width: 129vh;
       }
     }
     .cards {
-      margin-top: 10vh;
+      display: flex;
+      margin: 3vh auto 0 auto;
+      width: $element_with_padding * 3;
+      overflow: hidden;
+      padding-bottom: 5vh;
+      li {
+        display: inline-block;
+        position: relative;
+        width: $element;
+        flex-shrink: 0;
+      }
       .card {
         background-color: #fff;
         border-radius: 6px;
-        box-shadow: 0 2px 50px 0 rgba(143,143,143,.08);
+        box-shadow: 0 2px 20px 0 rgba(143,143,143,.08);
         color: #000;
         display: flex;
         flex-direction: column;
@@ -58,7 +71,6 @@ $slider_width: 129vh;
         margin: 0 10px;
         overflow: hidden;
         padding: 2.2vh;
-        width: 53vh;
         .card-header {
           display: flex;
           flex-direction: row;
@@ -75,10 +87,9 @@ $slider_width: 129vh;
             margin-left: 1vh;
             div {
               font-size: 1.8vh;
-              height: 2.5vh;
+              height: 2.2vh;
               &.name {
                 font-weight: bolder;
-                margin-top: 1vh;
               }
               &.position {
                 color: #bababa;
@@ -98,24 +109,25 @@ $slider_width: 129vh;
         }
       }
     }
-    .frame {
-      font-size: 0;
-      line-height: 0;
-      margin-left: calc(100% - #{$slider_width});
-      overflow: hidden;
-      position: relative;
-      white-space: nowrap;
-      width: $slider_width;
-    }
+  }
+}
 
-    .slides {
-      display: inline-block;
+@media(min-width: 1400px){
+  .block{
+    &.block8{
+      .cards{
+        width: $element_with_padding * 4;
+      }
     }
+  }
+}
 
-    li {
-      display: inline-block;
-      position: relative;
-      width: 65vh;
+@media(max-width: 1100px){
+  .block{
+    &.block8{
+      .cards{
+        width: $element_with_padding * 2;
+      }
     }
   }
 }
@@ -125,8 +137,11 @@ $slider_width: 129vh;
       background-image: none;
       padding-top: 30vh;
       .cards {
+        /*flex-direction: column;*/
+        width: $element_with_padding;
         .card {
-          width: 50vh;
+          /*width: 50vh;*/
+          margin-top: 2vh;
         }
       }
       .frame {

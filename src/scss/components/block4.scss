@@ -3,3 +3,12 @@
     margin-top: 25vh;
   }
 }
+
+@media(max-width: 800px){
+  .block{
+    &.block4{
+      margin-top: 55vh;
+      margin-bottom: 35vh;
+    }
+  }
+}

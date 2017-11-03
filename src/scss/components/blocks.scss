@@ -15,8 +15,11 @@ $point-size: 33px;
     font-size: 2.1vh;
     font-weight: bolder;
     text-transform: uppercase;
+    font-family: 'Helvetica';
     &.red {
+      font-family: 'Gotham';
       color: #ef494d;
+      font-size: 3vh;
     }
   }
   p {
@@ -45,7 +48,7 @@ $point-size: 33px;
     border-radius: 4px;
     color: #fff;
     display: inline-block;
-    font-size: 2vh;
+    font-size: 1.7vh;
     font-weight: bolder;
     margin-top: 2vh;
     padding: .8vh 2.3vh;

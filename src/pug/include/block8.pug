@@ -1,19 +1,10 @@
 section.block.block8
-  h2 our team
-  .slider.team_slider.cards
-    .frame.js_frame
-      ul.slides.js_slides
-        each member in team
-          li.js_slide
-            .card
-              .card-header
-                img(src= memberImage(member))
-                .person
-                  div.name= member.name
-                  div.position= member.position
-              .card-content= member.description
+  h2.red our team
+  ul.cards
+    each member, k in team
+      li
+        +card(member)
   ul.navigation
-
 
 
 

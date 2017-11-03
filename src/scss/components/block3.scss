@@ -70,15 +70,15 @@
         display: relative !important;
         flex-direction: column;
         justify-content: center;
-        margin-top: 18vh;
+        margin-top: 28vh;
         &:before {
           background: #ef494d;
           content: '';
           display: block;
           height: 90px;
-          margin-top: -140px;
+          margin-top: -20vh;
           position: absolute;
-          width: 16px;
+          width: 1.2vh;
         }
         .col {
           align-items: center !important;
