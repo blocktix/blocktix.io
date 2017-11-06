@@ -51,6 +51,7 @@
           max-height: 0;
           opacity: 0;
           transition: max-height 1s, opacity 1.5s;
+          visibility: hidden;
           ul {
             list-style-type: disc;
             padding: 0 3vh;
@@ -71,6 +72,7 @@
             max-height: 1000px;
             opacity: 1;
             padding: 2vh;
+            visibility: visible;
           }
         }
       }

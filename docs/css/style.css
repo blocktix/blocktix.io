@@ -772,6 +772,7 @@ h2 {
   max-height: 0;
   opacity: 0;
   transition: max-height 1s,opacity 1.5s;
+  visibility: hidden;
 }
 
 .block.faq .questions .question .answer ul {
@@ -794,6 +795,7 @@ h2 {
   max-height: 1000px;
   opacity: 1;
   padding: 2vh;
+  visibility: visible;
 }
 
 footer {
