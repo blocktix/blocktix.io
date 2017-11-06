@@ -1,5 +1,5 @@
 .block {
-  &.block9 {
+  &.contact {
     text-align: center;
     & > p {
       margin: 0 auto;
@@ -31,7 +31,7 @@
 
 @media(max-width: 800px) {
   .block {
-    &.block9 {
+    &.contact {
       .row {
         align-items: center;
         flex-direction: column;

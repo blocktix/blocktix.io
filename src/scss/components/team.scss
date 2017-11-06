@@ -3,9 +3,9 @@ $slider_width: 80%;
 $element: 40vh;
 $element_with_padding: 40.2vh;
 .block {
-  &.block8 {
-    background-image: url(../img/block_gray_bg.svg);
-    background-position: top right;
+  &.team {
+    background-image: url(../img/block_gray_bg_rotate.svg?rnd=22);
+    background-position: top left;
     background-repeat: no-repeat;
     background-size: 65%;
     margin-top: -15vh;
@@ -114,7 +114,7 @@ $element_with_padding: 40.2vh;
 
 @media(min-width: 1400px) {
   .block {
-    &.block8 {
+    &.team {
       .cards {
         width: $element_with_padding * 4;
       }
@@ -124,7 +124,7 @@ $element_with_padding: 40.2vh;
 
 @media(max-width: 1100px) {
   .block {
-    &.block8 {
+    &.team {
       .cards {
         width: $element_with_padding * 2;
       }
@@ -133,7 +133,7 @@ $element_with_padding: 40.2vh;
 }
 @media(max-width: 800px) {
   .block {
-    &.block8 {
+    &.team {
       background-image: none;
       padding-top: 30vh;
       .cards {

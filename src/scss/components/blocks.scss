@@ -9,6 +9,11 @@ $point-size: 33px;
     font-weight: bolder;
     padding-bottom: 1.5vw;
     text-transform: uppercase;
+    &.red {
+      color: #ef494d;
+      font-family: 'Gotham';
+      font-size: 3vh;
+    }
   }
   h2 {
     color: #394e57;
