@@ -30,7 +30,7 @@ document.addEventListener("DOMContentLoaded", function() {
   var scroll_watch = debounce(function(){
     var scrollPosition = document.documentElement.scrollTop || document.body.scrollTop;
     var element = document.querySelector('header > div.fixed');
-    if (scrollPosition > 280){
+    if (scrollPosition > 180){
       element.classList.add('inverse')
     } else {
       element.classList.remove('inverse')

@@ -51,7 +51,6 @@ var initSlider = function(container){
         })
         this.classList.add('active')
         const i = Array.prototype.indexOf.call(nav_container.childNodes, e.target)
-        // const len = container.querySelectorAll('li')[i].offsetLeft
         const len = container.querySelector('li').offsetWidth * i * visible_items - 1
         let xs = (i == 0) ? 0 :  len
         scrollV(container, xs, 1000, 'easeInOutQuint')
