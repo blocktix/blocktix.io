@@ -103,13 +103,15 @@ footer {
     margin-top: 5vh;
   }
 }
-.field-shift {
-  left: -9999px;
-  position: absolute;
+.response {
+  font-weight: 700;
+  margin-top: 20px;
 }
-html[dir='rtl'] .field-shift {
-  left: auto;
-  right: -9999px;
+.response-error {
+  color: #ef494d;
+}
+.response-success {
+  color: #d6e9c6;
 }
 
 @media(max-width: 1200px) {
