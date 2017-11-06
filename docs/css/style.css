@@ -673,7 +673,7 @@ footer p {
 
 footer form {
   margin: 0 auto;
-  max-width: 700px;
+  max-width: 900px;
   text-align: center;
 }
 
@@ -686,19 +686,29 @@ footer form input[type=email] {
   font-size: 1.5vh;
   margin: 0;
   padding: 2vh;
-  width: 70%;
+  width: 50%;
 }
 
 footer form input[type=submit] {
+  margin: 0;
+  margin-left: .5vh;
+  margin-top: 0;
+}
+
+footer form input[type=submit],
+footer form select {
   background-color: #ef494e;
   border: none;
   color: #fff;
   font-size: 14px;
+  padding: 2vh;
+  text-transform: uppercase;
+}
+
+footer form select {
   margin: 0;
   margin-left: -.5vh;
   margin-top: 0;
-  padding: 2vh;
-  text-transform: uppercase;
 }
 
 footer .icons {
@@ -765,6 +775,16 @@ footer nav ul li {
 footer p.copy {
   font-weight: bolder;
   margin-top: 5vh;
+}
+
+.field-shift {
+  left: -9999px;
+  position: absolute;
+}
+
+html[dir=rtl] .field-shift {
+  left: auto;
+  right: -9999px;
 }
 
 .row {

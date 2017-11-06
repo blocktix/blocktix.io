@@ -18,7 +18,7 @@ footer {
   }
   form {
     margin: 0 auto;
-    max-width: 700px;
+    max-width: 900px;
     text-align: center;
     input[type='email'] {
       background: transparent;
@@ -29,9 +29,20 @@ footer {
       font-size: 1.5vh;
       margin: 0;
       padding: 2vh 2vh;
-      width: 70%;
+      width: 50%;
     }
     input[type='submit'] {
+      background-color: #ef494e;
+      border: none;
+      color: #fff;
+      font-size: 14px;
+      margin: 0;
+      margin-left: .5vh;
+      margin-top: 0vh;
+      padding: 2vh;
+      text-transform: uppercase;
+    }
+    select {
       background-color: #ef494e;
       border: none;
       color: #fff;
@@ -91,6 +102,14 @@ footer {
     font-weight: bolder;
     margin-top: 5vh;
   }
+}
+.field-shift {
+  left: -9999px;
+  position: absolute;
+}
+html[dir='rtl'] .field-shift {
+  left: auto;
+  right: -9999px;
 }
 
 @media(max-width: 1200px) {
