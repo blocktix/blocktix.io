@@ -132,7 +132,7 @@
                             vett your events and more.</p>
                         <p>Sign up for launch news and get notified about when you can get the wheels turning and sell some tickets.</p>
                         <p class="navigation_link">
-                            <a class="btn" href="#signup">Sign up for news</a>
+                            <a class="btn" href="#signup" onclick="document.querySelector('#MERGE3').options.selectedIndex = 1;">Sign up for news</a>
                         </p>
                     </div>
                     <div class="col visual">
@@ -147,7 +147,7 @@
                         <p>Join our active community of event vetters, who earn and redeem credits by vetting and attending events, writing reviews for events they’ve already attended and watching advertisements for events they might want to attend later.</p>
                         <p>Sign up for launch news and be notified about when you can start earning credits and attending events.</p>
                         <p class="navigation_link">
-                            <a class="btn" href="#signup">Sign up for news</a>
+                            <a class="btn" href="#signup" onclick="document.querySelector('#MERGE3').options.selectedIndex = 0;">Sign up for news</a>
                         </p>
                     </div>
                     <div class="col visual">
@@ -479,6 +479,14 @@
             <form action="https://blocktix.us17.list-manage.com/subscribe/post" method="POST">
                 <input type="hidden" name="u" value="3bc8785a5db2b53db0b4d864e">
                 <input type="hidden" name="id" value="314e977746">
+                <div class="field-shift" aria-label="Please leave the following three fields empty">
+                    <label for="b_name">Name:</label>
+                    <input type="text" name="b_name" tabindex="-1" value="" placeholder="Freddie" id="b_name">
+                    <label for="b_email">Email:</label>
+                    <input type="email" name="b_email" tabindex="-1" value="" placeholder="youremail@gmail.com" id="b_email">
+                    <label for="b_comment">Comment:</label>
+                    <textarea name="b_comment" tabindex="-1" placeholder="Please comment" id="b_comment"></textarea>
+                </div>
                 <input type="email" name="MERGE0" id="MERGE0" placeholder="Email Address" autocapitalize="off" autocorrect="off">
                 <select name="MERGE3" id="MERGE3">
                     <option value="No, I only attend events.">Attendee</option>
