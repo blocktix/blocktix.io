@@ -358,7 +358,7 @@ h2 {
 
 .block.block6 .row .visual img {
   margin: 17vh auto auto 5vh;
-  width: 45%;
+  width: 55%;
 }
 
 .block.block6 .row .overview {
@@ -402,6 +402,7 @@ h2 {
   flex-direction: column;
   flex-shrink: 0;
   font-size: 1.9vh;
+  line-height: 160%;
   width: 25%;
   -webkit-box-align: center;
   -webkit-box-direction: normal;
@@ -509,7 +510,7 @@ h2 {
   justify-content: flex-start;
   margin: 0 10px;
   overflow: hidden;
-  padding: 2.2vh;
+  padding: 3.5vh;
   -webkit-box-orient: vertical;
   -webkit-box-pack: start;
   -ms-flex-direction: column;
@@ -543,7 +544,7 @@ h2 {
   flex-direction: column;
   flex-wrap: wrap;
   line-height: auto;
-  margin-left: 3vh;
+  margin-left: 4.5vh;
   -webkit-box-direction: normal;
   -webkit-box-orient: vertical;
   -ms-flex-direction: column;
@@ -551,8 +552,8 @@ h2 {
 }
 
 .block.block8 .cards .card .card-header .person div {
-  font-size: 1.4vh;
-  height: 2.2vh;
+  font-size: 1.8vh;
+  height: 2.5vh;
 }
 
 .block.block8 .cards .card .card-header .person div.name {
@@ -561,13 +562,13 @@ h2 {
 
 .block.block8 .cards .card .card-header .person div.position {
   color: #bababa;
-  font-size: 1.2vh;
+  font-size: 1.5vh;
 }
 
 .block.block8 .cards .card .card-content {
   color: #676767;
   display: block;
-  font-size: 1.3vh;
+  font-size: 1.8vh;
   line-height: 160%;
   min-height: 10vh;
   white-space: wrap;
@@ -937,8 +938,9 @@ header:after {
   content: '';
   display: block;
   height: 100%;
+  left: -2px;
   position: absolute;
-  top: 1px;
+  top: 0;
   width: 101%;
   z-index: 0;
 }

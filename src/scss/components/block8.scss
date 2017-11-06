@@ -70,7 +70,7 @@ $element_with_padding: 40.2vh;
         justify-content: flex-start;
         margin: 0 10px;
         overflow: hidden;
-        padding: 2.2vh;
+        padding: 3.5vh;
         .card-header {
           display: flex;
           flex-direction: row;
@@ -84,16 +84,16 @@ $element_with_padding: 40.2vh;
             flex-direction: column;
             flex-wrap: wrap;
             line-height: auto;
-            margin-left: 3vh;
+            margin-left: 4.5vh;
             div {
-              font-size: 1.4vh;
-              height: 2.2vh;
+              font-size: 1.8vh;
+              height: 2.5vh;
               &.name {
                 font-weight: bold;
               }
               &.position {
                 color: #bababa;
-                font-size: 1.2vh;
+                font-size: 1.5vh;
               }
             }
           }
@@ -101,7 +101,7 @@ $element_with_padding: 40.2vh;
         .card-content {
           color: #676767;
           display: block;
-          font-size: 1.3vh;
+          font-size: 1.8vh;
           line-height: 160%;
           min-height: 10vh;
           white-space: wrap;
