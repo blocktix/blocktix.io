@@ -74,10 +74,8 @@ document.addEventListener("DOMContentLoaded", function() {
     })
   }
 
-
   document.querySelector('.toggle_menu').addEventListener('click', function(e){
     e.preventDefault();
     menu.classList.toggle('active');
-  })
-
-})
+  });
+});
