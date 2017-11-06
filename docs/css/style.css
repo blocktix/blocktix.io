@@ -124,6 +124,14 @@ h2 {
   content: '\EA0A';
 }
 
+.icon_reddit:before {
+  content: '\EA0B';
+}
+
+.icon_discord:before {
+  content: '\EA0C';
+}
+
 [class*=icon_]:after,
 [class*=icon_]:before {
   display: inline-block;
@@ -1056,6 +1064,7 @@ header .wrapper section .buttons {
 }
 
 header .wrapper section .buttons .btn {
+  background-color: hsla(0,0%,100%,.2);
   border: 1px solid #fff;
   border-radius: 5px;
   color: #fff;
