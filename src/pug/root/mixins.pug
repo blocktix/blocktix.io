@@ -17,3 +17,7 @@ mixin card(member)
         div.name= member.name
         div.position= member.position
     .card-content= member.description
+    if member.links
+      .overlap
+        each url, class_name in member.links
+          a(href=url class="icon_" + class_name target="_blank")
