@@ -17,6 +17,9 @@ footer {
     text-align: center;
   }
   form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     margin: 0 auto;
     max-width: 900px;
     text-align: center;
@@ -26,6 +29,7 @@ footer {
       border-radius: 0;
       border-right: 0;
       color: #fff;
+      flex-shrink: .5;
       font-size: 1.5vh;
       margin: 0;
       padding: 2vh 2vh;
@@ -37,9 +41,8 @@ footer {
       color: #fff;
       font-size: 14px;
       margin: 0;
-      margin-left: .5vh;
       margin-top: 0vh;
-      padding: 2vh;
+      padding: 1.3vh;
       text-transform: uppercase;
     }
     select {
@@ -129,6 +132,16 @@ footer {
     }
     nav {
       font-size: 1.5vh;
+    }
+  }
+}
+
+@media(max-width: 800px) {
+  footer {
+    form {
+      input[type='submit'] {
+        margin-top: 1vh;
+      }
     }
   }
 }
