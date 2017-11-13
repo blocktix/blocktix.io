@@ -159,7 +159,7 @@ h2 {
 .animation.animation2.active .bg {
   animation-duration: 3s;
   animation-name: l;
-  background: url(../../img/animations/animation2/bg.svg);
+  background: url(../img/animations/animation2/bg.svg);
   background-size: contain;
   height: 217px;
   left: 35px;
@@ -218,7 +218,7 @@ h2 {
 }
 
 .animation.animation2.active .list {
-  background: url(../../img/animations/animation2/list.svg);
+  background: url(../img/animations/animation2/list.svg);
   height: 169px;
   left: 30px;
   position: absolute;
@@ -229,7 +229,7 @@ h2 {
 .animation.animation2.active .list-bg {
   animation-duration: 1s;
   animation-name: b;
-  background: url(../../img/animations/animation2/list_bg.svg);
+  background: url(../img/animations/animation2/list_bg.svg);
   height: 169px;
   left: 50px;
   opacity: 1;
@@ -270,7 +270,7 @@ h2 {
 }
 
 .animation.animation2.active .guy {
-  background: url(../../img/animations/animation2/guy.svg);
+  background: url(../img/animations/animation2/guy.svg);
   height: 231px;
   left: 135px;
   position: absolute;
@@ -289,7 +289,7 @@ h2 {
 }
 
 .animation.animation2.active .money-box {
-  background: url(../../img/animations/animation2/money_box.svg) no-repeat;
+  background: url(../img/animations/animation2/money_box.svg) no-repeat;
   bottom: 0;
   height: 72px;
   left: 40px;
@@ -301,7 +301,7 @@ h2 {
 .animation.animation2.active .money {
   animation-duration: 2s;
   animation-name: c;
-  background: url(../../img/animations/animation2/money.svg) no-repeat;
+  background: url(../img/animations/animation2/money.svg) no-repeat;
   bottom: -10px;
   height: 82px;
   left: 69px;
@@ -340,7 +340,7 @@ h2 {
 .animation.animation2.active .cardes {
   animation-duration: 2s;
   animation-name: d;
-  background: url(../../img/animations/animation2/cards.svg) no-repeat;
+  background: url(../img/animations/animation2/cards.svg) no-repeat;
   bottom: 10px;
   height: 54px;
   opacity: 1;
@@ -410,7 +410,7 @@ h2 {
 
 .animation.animation2.active .coin1 {
   animation-duration: 3s;
-  background: url(../../img/animations/animation2/coin1.svg) no-repeat;
+  background: url(../img/animations/animation2/coin1.svg) no-repeat;
   bottom: 30px;
   left: 62px;
   -webkit-animation-duration: 3s;
@@ -418,7 +418,7 @@ h2 {
 
 .animation.animation2.active .coin2 {
   animation-duration: 4s;
-  background: url(../../img/animations/animation2/coin2.svg) no-repeat;
+  background: url(../img/animations/animation2/coin2.svg) no-repeat;
   bottom: 30px;
   left: 55px;
   -webkit-animation-duration: 4s;
@@ -426,7 +426,7 @@ h2 {
 
 .animation.animation2.active .coin3 {
   animation-duration: 5s;
-  background: url(../../img/animations/animation2/coin3.svg) no-repeat;
+  background: url(../img/animations/animation2/coin3.svg) no-repeat;
   bottom: 30px;
   left: 67px;
   -webkit-animation-duration: 5s;
@@ -447,7 +447,7 @@ h2 {
 .animation.animation2.active .cross {
   animation-duration: 3s;
   animation-name: f;
-  background: url(../../img/animations/animation2/cross.svg) no-repeat;
+  background: url(../img/animations/animation2/cross.svg) no-repeat;
   bottom: 154px;
   left: 20px;
   opacity: 1;
@@ -482,7 +482,7 @@ h2 {
 .animation.animation2.active .cross2 {
   animation-duration: 2.5s;
   animation-name: g;
-  background: url(../../img/animations/animation2/cross2.svg) no-repeat;
+  background: url(../img/animations/animation2/cross2.svg) no-repeat;
   bottom: 334px;
   left: 220px;
   opacity: 1;
@@ -517,7 +517,7 @@ h2 {
 .animation.animation2.active .ringlet {
   animation-duration: 3s;
   animation-name: h;
-  background: url(../../img/animations/animation2/ringlet.svg) no-repeat;
+  background: url(../img/animations/animation2/ringlet.svg) no-repeat;
   bottom: 114px;
   left: 95px;
   opacity: 1;
@@ -552,7 +552,7 @@ h2 {
 .animation.animation2.active .ringlet2 {
   animation-duration: 3s;
   animation-name: i;
-  background: url(../../img/animations/animation2/ringlet2.svg) no-repeat;
+  background: url(../img/animations/animation2/ringlet2.svg) no-repeat;
   bottom: 224px;
   left: 305px;
   opacity: 1;
@@ -585,13 +585,13 @@ h2 {
 }
 
 .animation.animation2.active .ball {
-  background: url(../../img/animations/animation2/ball.svg) no-repeat;
+  background: url(../img/animations/animation2/ball.svg) no-repeat;
   bottom: 134px;
   left: 325px;
 }
 
 .animation.animation2.active .ball2 {
-  background: url(../../img/animations/animation2/ball2.svg) no-repeat;
+  background: url(../img/animations/animation2/ball2.svg) no-repeat;
   bottom: 44px;
   left: 145px;
 }
@@ -641,19 +641,19 @@ h2 {
 }
 
 .animation.animation2.active .checkbox {
-  background: url(../../img/animations/animation2/checkbox.svg) no-repeat;
+  background: url(../img/animations/animation2/checkbox.svg) no-repeat;
   bottom: 313px;
   left: 56px;
 }
 
 .animation.animation2.active .checkbox2 {
-  background: url(../../img/animations/animation2/checkbox2.svg) no-repeat;
+  background: url(../img/animations/animation2/checkbox2.svg) no-repeat;
   bottom: 271px;
   left: 56px;
 }
 
 .animation.animation2.active .checkbox3 {
-  background: url(../../img/animations/animation2/checkbox3.svg) no-repeat;
+  background: url(../img/animations/animation2/checkbox3.svg) no-repeat;
   bottom: 232px;
   left: 56px;
 }
@@ -673,32 +673,32 @@ h2 {
 }
 
 .animation.animation2.active .string {
-  background: url(../../img/animations/animation2/string.svg);
+  background: url(../img/animations/animation2/string.svg);
   top: 29px;
 }
 
 .animation.animation2.active .string2 {
-  background: url(../../img/animations/animation2/string2.svg) no-repeat;
+  background: url(../img/animations/animation2/string2.svg) no-repeat;
   top: 41px;
 }
 
 .animation.animation2.active .string3 {
-  background: url(../../img/animations/animation2/string3.svg) no-repeat;
+  background: url(../img/animations/animation2/string3.svg) no-repeat;
   top: 69px;
 }
 
 .animation.animation2.active .string4 {
-  background: url(../../img/animations/animation2/string4.svg) no-repeat;
+  background: url(../img/animations/animation2/string4.svg) no-repeat;
   top: 81px;
 }
 
 .animation.animation2.active .string5 {
-  background: url(../../img/animations/animation2/string5.svg) no-repeat;
+  background: url(../img/animations/animation2/string5.svg) no-repeat;
   top: 109px;
 }
 
 .animation.animation2.active .string6 {
-  background: url(../../img/animations/animation2/string6.svg) no-repeat;
+  background: url(../img/animations/animation2/string6.svg) no-repeat;
   top: 121px;
 }
 
@@ -751,17 +751,17 @@ h2 {
 }
 
 .animation.animation2.active .circle {
-  background: url(../../img/animations/animation2/circle.svg);
+  background: url(../img/animations/animation2/circle.svg);
   top: 21px;
 }
 
 .animation.animation2.active .circle2 {
-  background: url(../../img/animations/animation2/circle2.svg);
+  background: url(../img/animations/animation2/circle2.svg);
   top: 63px;
 }
 
 .animation.animation2.active .circle3 {
-  background: url(../../img/animations/animation2/circle3.svg);
+  background: url(../img/animations/animation2/circle3.svg);
   top: 103px;
 }
 
