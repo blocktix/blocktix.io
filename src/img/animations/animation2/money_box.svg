@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="69px" height="71px" viewBox="0 0 69 71" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 46.2 (44496) - http://www.bohemiancoding.com/sketch -->
+    <title>Group 33</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Apple-TV-Copy-2" transform="translate(-478.000000, -2649.000000)">
+            <g id="2" transform="translate(249.000000, 1860.000000)">
+                <g id="icon2" transform="translate(0.000000, 538.000000)">
+                    <g id="Group-34" transform="translate(25.000000, 0.000000)">
+                        <g id="Group-33" transform="translate(204.235294, 249.808696)">
+                            <rect id="Rectangle-70" fill="#1DC0D9" transform="translate(14.438193, 15.860870) rotate(15.000000) translate(-14.438193, -15.860870) " x="2.98721228" y="2.97391304" width="22.9019608" height="25.773913" rx="4"></rect>
+                            <rect id="Rectangle-70-Copy" fill="#1DC0D9" transform="translate(54.267690, 15.860870) scale(-1, 1) rotate(15.000000) translate(-54.267690, -15.860870) " x="42.8167093" y="2.97391304" width="22.9019608" height="25.773913" rx="4"></rect>
+                            <path d="M48.3345734,68.4224836 C44.0634562,70.3194036 39.3318963,71.373913 34.3529412,71.373913 C29.0854785,71.373913 24.0949127,70.193655 19.6335139,68.084286 C17.9149909,70.0969715 15.3532745,71.373913 12.4919786,71.373913 C7.31763165,71.373913 3.12299465,67.1979508 3.12299465,62.0466403 C3.12299465,59.6431747 4.03612917,57.4520336 5.53586173,55.7982996 C2.03430139,50.4395366 0,44.0432354 0,37.173913 C0,18.2857746 15.3803357,2.97391304 34.3529412,2.97391304 C53.3255467,2.97391304 68.7058824,18.2857746 68.7058824,37.173913 C68.7058824,44.3435509 66.4898202,50.997904 62.7024094,56.4951292 C63.8582142,58.0462603 64.5418895,59.9669653 64.5418895,62.0466403 C64.5418895,67.1979508 60.3472525,71.373913 55.1729055,71.373913 C52.4753463,71.373913 50.0440608,70.238935 48.3345796,68.4224814 Z" id="Combined-Shape" fill="#1DC0D9"></path>
+                            <g id="Group-31" transform="translate(15.931799, 22.800000)">
+                                <ellipse id="Oval-30" fill="#FFFFFF" cx="7.46803069" cy="7.43478261" rx="7.46803069" ry="7.43478261"></ellipse>
+                                <ellipse id="Oval-30-Copy" fill="#585673" cx="7.46803069" cy="7.43478261" rx="3.20058458" ry="3.1863354"></ellipse>
+                            </g>
+                            <g id="Group-31-Copy" transform="translate(38.833760, 22.800000)">
+                                <ellipse id="Oval-30" fill="#FFFFFF" cx="7.46803069" cy="7.43478261" rx="7.46803069" ry="7.43478261"></ellipse>
+                                <ellipse id="Oval-30-Copy" fill="#585673" cx="7.46803069" cy="7.43478261" rx="3.20058458" ry="3.1863354"></ellipse>
+                            </g>
+                            <g id="Group-32" transform="translate(23.897698, 39.652174)">
+                                <rect id="Rectangle-71" fill="#5286BE" x="0" y="0" width="20.9104859" height="12.8869565" rx="6.44347826"></rect>
+                                <ellipse id="Oval-31" fill="#1DC0D9" cx="6.27314578" cy="6.44347826" rx="3.13657289" ry="3.22173913"></ellipse>
+                                <ellipse id="Oval-31-Copy" fill="#1DC0D9" cx="14.6373402" cy="6.44347826" rx="3.13657289" ry="3.22173913"></ellipse>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

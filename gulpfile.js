@@ -40,6 +40,7 @@ gulp.task('build-css', () => {
   return gulp.src([
     `${sourceDirectory}scss/*.scss`,
     `${sourceDirectory}scss/icons/*.scss`,
+    `${sourceDirectory}scss/animations/*.scss`,
     `${sourceDirectory}scss/components/**/*.scss`
   ])
     .pipe($.plumber())
@@ -76,6 +77,7 @@ gulp.task('copy-img', () => {
   return gulp.src([
     `${sourceDirectory}img/*.{jpg,jpeg,png,svg,gif,ico,json}`,
     `${sourceDirectory}img/**/*.{jpg,jpeg,png,svg,gif,ico,json,xml}`,
+    `${sourceDirectory}img/**/**/*.{png,svg}`,
     ...getPluginsPaths('img')
   ])
     .pipe(gulp.dest(`${buildDirectory}img`))

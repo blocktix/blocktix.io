@@ -14,6 +14,26 @@ var debounce = function(func, wait, immediate) {
   }
 }
 
+var elementInViewport = function(el) {
+  var top = el.offsetTop;
+  var left = el.offsetLeft;
+  var width = el.offsetWidth;
+  var height = el.offsetHeight;
+
+  while(el.offsetParent) {
+    el = el.offsetParent;
+    top += el.offsetTop;
+    left += el.offsetLeft;
+  }
+
+  return (
+    (top + height) >= window.pageYOffset &&
+    left >= window.pageXOffset &&
+    top <= (window.pageYOffset + window.innerHeight) &&
+    (left + width) <= (window.pageXOffset + window.innerWidth)
+  );
+}
+
 document.addEventListener("DOMContentLoaded", function() {
   var menu = document.querySelector('.mobile')
   var elements = Array.from(document.querySelectorAll('.scroll_watch'))
@@ -50,6 +70,29 @@ document.addEventListener("DOMContentLoaded", function() {
         document.querySelector('a[href*=' + i + ']').parentNode.classList.add('active')
       }
     }
+
+    Array.prototype.forEach.call(
+        document.querySelectorAll('.animation'),
+        function(elm){
+          if (elementInViewport(elm)){
+            if (elm.classList.contains('invisible')){
+              elm.classList.remove('active')
+              elm.classList.remove('invisible')
+            }
+            setTimeout(function(){
+              elm.classList.add('active')
+              triggerTimers()
+            }, 50)
+          } else{
+            elm.classList.add('invisible')
+            Array.prototype.forEach.call(
+              elm.querySelectorAll('.isAnimated'),
+              function(item){
+                item.classList.remove('isAnimated')
+              }
+            );
+          }
+    })
   }, 25);
   window.addEventListener('scroll', scroll_watch);
 

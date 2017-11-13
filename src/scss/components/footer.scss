@@ -35,9 +35,12 @@ footer {
       padding: 2vh 2vh;
       width: 50%;
     }
-    input[type='submit'] {
+    input[type='submit'],
+    select {
+      appearance: none;
       background-color: #ef494e;
       border: none;
+      border-radius: 0;
       color: #fff;
       font-size: 14px;
       margin: 0;
@@ -45,7 +48,7 @@ footer {
       padding: 1.3vh;
       text-transform: uppercase;
     }
-    select {
+    /*select {
       background-color: #ef494e;
       border: none;
       color: #fff;
@@ -53,9 +56,9 @@ footer {
       margin: 0;
       margin-left: -.5vh;
       margin-top: 0vh;
-      padding: 2vh;
+      padding: 1.3vh;
       text-transform: uppercase;
-    }
+    }*/
   }
   .icons {
     display: flex;
@@ -139,8 +142,13 @@ footer {
 @media(max-width: 800px) {
   footer {
     form {
+      input[type='email'] {
+        border-right: 1px solid #fff;
+        margin-bottom: 2vh;
+        width: 80%;
+      }
       input[type='submit'] {
-        margin-top: 1vh;
+        margin-left: 1vh;
       }
     }
   }

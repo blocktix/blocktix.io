@@ -162,11 +162,26 @@ $element_with_padding: 40.2vh;
       background-image: none;
       padding-top: 30vh;
       .cards {
-        /*flex-direction: column;*/
         width: $element_with_padding;
         .card {
-          /*width: 50vh;*/
           margin-top: 2vh;
+          .card-header {
+            img {
+              height: 5vh;
+              width: 5vh;
+            }
+            .person {
+              div {
+                &.name,
+                &.position {
+                  font-size: 2.2vh;
+                }
+              }
+            }
+          }
+          .card-content {
+            font-size: 2.4vh;
+          }
         }
       }
       .frame {
