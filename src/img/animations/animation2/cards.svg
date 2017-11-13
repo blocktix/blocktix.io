@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="58px" height="54px" viewBox="0 0 58 54" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 46.2 (44496) - http://www.bohemiancoding.com/sketch -->
+    <title>Group 23</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <rect id="path-1" x="0" y="0" width="50.5961199" height="32.7500701" rx="3"></rect>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Apple-TV-Copy-2" transform="translate(-443.000000, -2659.000000)">
+            <g id="2" transform="translate(249.000000, 1860.000000)">
+                <g id="icon2" transform="translate(0.000000, 538.000000)">
+                    <g id="Group-34" transform="translate(25.000000, 0.000000)">
+                        <g id="Group-27" transform="translate(167.529412, 247.930435)">
+                            <g id="Group-23" transform="translate(0.000000, 12.801831)">
+                                <g id="Rectangle-67" transform="translate(30.637014, 26.916073) rotate(29.000000) translate(-30.637014, -26.916073) translate(5.137014, 10.416073)">
+                                    <mask id="mask-2" fill="white">
+                                        <use xlink:href="#path-1"></use>
+                                    </mask>
+                                    <use id="Mask" fill="#FAD06A" xlink:href="#path-1"></use>
+                                    <rect fill="#DCAE41" mask="url(#mask-2)" x="-2.29982363" y="6.77587658" width="56.345679" height="5.64656381"></rect>
+                                </g>
+                                <g id="Group-22" transform="translate(4.911576, 20.672674)">
+                                    <rect id="Rectangle-62" fill="#FA6BAB" x="0" y="0" width="50.5961199" height="32.7500701" rx="4"></rect>
+                                    <rect id="Rectangle-65" fill="#DC4A8B" x="6.8994709" y="21.4569425" width="10.3492063" height="3.38793829" rx="1.69396914"></rect>
+                                    <rect id="Rectangle-65-Copy" fill="#DC4A8B" x="20.6984127" y="21.4569425" width="10.3492063" height="3.38793829" rx="1.69396914"></rect>
+                                    <rect id="Rectangle-63" fill="#CC3478" x="6.8994709" y="6.77587658" width="10.3492063" height="10.1638149" rx="2"></rect>
+                                </g>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
