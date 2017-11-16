@@ -5,6 +5,7 @@
 
   const getBackgroundImageProperty = image => `background-image:url(img/${image});`
   const memberImage = member => `./img/${member.image}`
+  const animation = file => `./img/${file}?rnd=${Math.random()}`
 
   const menu_items = [
     {title: "Create Events", name: "create_events"},

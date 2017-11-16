@@ -4,23 +4,24 @@
   }
   &.animation2.active {
     .icons {
-      height: 359px;
+      height: 39.9vh;
       position: relative;
-      width: 100%;
+      /*width: 100%;*/
     }
 
     .bg {
       animation-duration: 3s;
       animation-name: bgShow;
       background: url('../img/animations/animation2/bg.svg');
+      background-repeat: no-repeat;
       background-size: contain;
-      height: 217px;
-      left: 35px;
+      height: 37.7vh;
+      left: 3.5vh;
       opacity: 1;
       position: absolute;
-      top: 70px;
+      top: 7vh;
       transform: rotate(-27deg);
-      width: 341px;
+      width: 34.1vh;
       z-index: 1;
     }
 
@@ -37,19 +38,19 @@
       animation-duration: 1s;
       animation-name: listBlockShow;
       display: inline-block;
-      height: 190px;
+      height: 19vh;
       left: 1px;
       opacity: 1;
       position: absolute;
       top: 1px;
-      width: 159px;
+      width: 15.9vh;
       z-index: 1;
     }
     @keyframes listBlockShow {
       from {
-        left: 20px;
+        left: 2vh;
         opacity: 0;
-        top: 20px;
+        top: 2vh;
       }
       to {
         left: 1px;
@@ -60,10 +61,11 @@
 
     .list {
       background: url('../img/animations/animation2/list.svg');
-      height: 169px;
-      left: 30px;
+      background-repeat: no-repeat;
+      height: 16.9vh;
+      left: 3vh;
       position: absolute;
-      width: 138px;
+      width: 15.8vh;
       z-index: 3;
     }
 

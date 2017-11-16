@@ -72,25 +72,16 @@ document.addEventListener("DOMContentLoaded", function() {
     }
 
     Array.prototype.forEach.call(
-        document.querySelectorAll('.animation'),
+        document.querySelectorAll('img.svg_animation'),
         function(elm){
           if (elementInViewport(elm)){
             if (elm.classList.contains('invisible')){
-              elm.classList.remove('active')
               elm.classList.remove('invisible')
+              elm.src = elm.src.replace(/\?rnd\=.*$/, "?rnd=" + Math.random())
             }
-            setTimeout(function(){
-              elm.classList.add('active')
-              triggerTimers()
-            }, 50)
+            elm.classList.add('active')
           } else{
             elm.classList.add('invisible')
-            Array.prototype.forEach.call(
-              elm.querySelectorAll('.isAnimated'),
-              function(item){
-                item.classList.remove('isAnimated')
-              }
-            );
           }
     })
   }, 25);

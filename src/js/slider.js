@@ -29,7 +29,6 @@ var initSlider = function(container){
     (visible_items += (elementVisible(container, elm) ? 1 : 0))
   })
   const pages = Math.ceil(total / visible_items)
-  console.log(total, visible_items, pages)
   const nav_container = document.querySelector('ul.navigation')
   Array.prototype.forEach.call(nav_container.querySelectorAll('li'), function(elm){
     nav_container.removeChild(elm)
