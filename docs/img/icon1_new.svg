@@ -358,4 +358,80 @@
   <animate id="tool9_pulse" xlink:href="#tool9" attributeName="opacity" values="1;0.5;1" dur="1.2s" begin="tool8_pulse.end" />
   <animate id="tool10_pulse" xlink:href="#tool10" attributeName="opacity" values="1;0;1" dur="0.3s" begin="tool9_pulse.end" />
   <animate id="tool11_pulse" xlink:href="#tool11" attributeName="opacity" values="1;0.4;1" dur="1s" begin="tool10_pulse.end" />
+
+  <animateMotion
+   id="group_1_move_phase1"
+   xlink:href="#group1"
+   dur="0.5s"
+   begin="group_1_move_phase3.end + 3s; group3_shadow_animate.end + 0.5s"
+   fill="freeze"
+   path="M 0,0, 190,40, 300,160"
+/>
+<animateMotion
+   id="group_2_move_phase1"
+   xlink:href="#group2"
+   dur="0.5s"
+   begin="group_2_move_phase3.end + 3s; group3_shadow_animate.end + 0.5s"
+   fill="freeze"
+   path="M 0,0, -70,140, -150, 180, -300,210"
+/>
+<animateMotion
+   id="group_3_move_phase1"
+   xlink:href="#group3"
+   dur="0.5s"
+   begin="group_3_move_phase3.end + 3s; group3_shadow_animate.end + 0.5s"
+   fill="freeze"
+   path="M 0,0, 50,-295"
+/>
+
+<animateMotion
+   id="group_1_move_phase2"
+   xlink:href="#group1"
+   dur="0.4s"
+   begin="group_1_move_phase1.end + 0.2s"
+   fill="freeze"
+   path="M 300,160, 150, 360, -50,380"
+/>
+<animateMotion
+   id="group_2_move_phase2"
+   xlink:href="#group2"
+   dur="0.4s"
+   begin="group_2_move_phase1.end + 0.2s"
+   fill="freeze"
+   path="M -300,210, -280, -120"
+/>
+<animateMotion
+   id="group_3_move_phase2"
+   xlink:href="#group3"
+   dur="0.4s"
+   begin="group_3_move_phase1.end + 0.2s"
+   fill="freeze"
+   path="M 50,-295, 200,-280, 340, -190"
+/>
+
+  <animateMotion
+   id="group_1_move_phase3"
+   xlink:href="#group1"
+   dur="0.8s"
+   begin="group_1_move_phase2.end + 0.2s"
+   fill="freeze"
+   path="M -50,380, 0,0"
+/>
+  <animateMotion
+   id="group_2_move_phase3"
+   xlink:href="#group2"
+   dur="0.8s"
+   begin="group_2_move_phase2.end + 0.2s"
+   fill="freeze"
+   path="M -280, -120, -120,-100, 0,0"
+/>
+
+  <animateMotion
+   id="group_3_move_phase3"
+   xlink:href="#group3"
+   dur="0.8s"
+   begin="group_3_move_phase2.end + 0.2s"
+   fill="freeze"
+   path="M 340, -190, 340,-50, 0,0"
+/>
 </svg>
