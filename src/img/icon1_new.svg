@@ -362,24 +362,24 @@
   <animateMotion
    id="group_1_move_phase1"
    xlink:href="#group1"
-   dur="0.5s"
-   begin="group_1_move_phase3.end + 3s; group3_shadow_animate.end + 0.5s"
+   dur="1.5s"
+   begin="group_1_move_phase3.end + 8s; group3_shadow_animate.end + 0.5s"
    fill="freeze"
    path="M 0,0, 190,40, 300,160"
 />
 <animateMotion
    id="group_2_move_phase1"
    xlink:href="#group2"
-   dur="0.5s"
-   begin="group_2_move_phase3.end + 3s; group3_shadow_animate.end + 0.5s"
+   dur="1.5s"
+   begin="group_2_move_phase3.end + 8s; group3_shadow_animate.end + 0.5s"
    fill="freeze"
    path="M 0,0, -70,140, -150, 180, -300,210"
 />
 <animateMotion
    id="group_3_move_phase1"
    xlink:href="#group3"
-   dur="0.5s"
-   begin="group_3_move_phase3.end + 3s; group3_shadow_animate.end + 0.5s"
+   dur="1.5s"
+   begin="group_3_move_phase3.end + 8s; group3_shadow_animate.end + 0.5s"
    fill="freeze"
    path="M 0,0, 50,-295"
 />
@@ -387,24 +387,24 @@
 <animateMotion
    id="group_1_move_phase2"
    xlink:href="#group1"
-   dur="0.4s"
-   begin="group_1_move_phase1.end + 0.2s"
+   dur="1.5s"
+   begin="group_1_move_phase1.end + 1.3s"
    fill="freeze"
    path="M 300,160, 150, 360, -50,380"
 />
 <animateMotion
    id="group_2_move_phase2"
    xlink:href="#group2"
-   dur="0.4s"
-   begin="group_2_move_phase1.end + 0.2s"
+   dur="1.5s"
+   begin="group_2_move_phase1.end + 1.3s"
    fill="freeze"
    path="M -300,210, -280, -120"
 />
 <animateMotion
    id="group_3_move_phase2"
    xlink:href="#group3"
-   dur="0.4s"
-   begin="group_3_move_phase1.end + 0.2s"
+   dur="1.5s"
+   begin="group_3_move_phase1.end + 1.3s"
    fill="freeze"
    path="M 50,-295, 200,-280, 340, -190"
 />
@@ -412,16 +412,16 @@
   <animateMotion
    id="group_1_move_phase3"
    xlink:href="#group1"
-   dur="0.8s"
-   begin="group_1_move_phase2.end + 0.2s"
+   dur="1.5s"
+   begin="group_1_move_phase2.end + 1.2s"
    fill="freeze"
    path="M -50,380, 0,0"
 />
   <animateMotion
    id="group_2_move_phase3"
    xlink:href="#group2"
-   dur="0.8s"
-   begin="group_2_move_phase2.end + 0.2s"
+   dur="1.5s"
+   begin="group_2_move_phase2.end + 1.2s"
    fill="freeze"
    path="M -280, -120, -120,-100, 0,0"
 />
@@ -429,9 +429,102 @@
   <animateMotion
    id="group_3_move_phase3"
    xlink:href="#group3"
-   dur="0.8s"
-   begin="group_3_move_phase2.end + 0.2s"
+   dur="1.5s"
+   begin="group_3_move_phase2.end + 1.2s"
    fill="freeze"
    path="M 340, -190, 340,-50, 0,0"
 />
+
+
+  <animateMotion
+   xlink:href="#tool1"
+   dur="35s"
+   begin="0s"
+   fill="freeze"
+   repeatCount="indefinite"
+   path="M 0,0, 80,440, -240, 340, 0,0"
+/>
+
+  <animateMotion
+   xlink:href="#tool2"
+   dur="45s"
+   begin="0s"
+   fill="freeze"
+   repeatCount="indefinite"
+   path="M 0,0, -480,-140, -240, 340, 0,0"
+/>
+  <animateMotion
+   xlink:href="#tool3"
+   dur="39s"
+   begin="0s"
+   fill="freeze"
+   repeatCount="indefinite"
+   path="M 0,0, -380,340, -240, 340, -400, -50, 0,0"
+/>
+  <animateMotion
+   xlink:href="#tool4"
+   dur="20s"
+   begin="0s"
+   fill="freeze"
+   repeatCount="indefinite"
+   path="M 0,0, 300,-440, 40,-340, 0,0"
+/>
+  <animateMotion
+   xlink:href="#tool5"
+   dur="31s"
+   begin="0s"
+   fill="freeze"
+   repeatCount="indefinite"
+   path="M 0,0, 240,-340, 390,20, 200, -140, 0,0"
+/>
+  <animateMotion
+   xlink:href="#tool6"
+   dur="28s"
+   begin="0s"
+   fill="freeze"
+   repeatCount="indefinite"
+   path="M 0,0, -300, -300, -340, 20, 0,0"
+/>
+  <animateMotion
+   xlink:href="#tool7"
+   dur="53s"
+   begin="0s"
+   fill="freeze"
+   repeatCount="indefinite"
+   path="M 0,0, 200,-420, 100, -310, 200, -200, 0, 0"
+/>
+  <animateMotion
+   xlink:href="#tool8"
+   dur="56s"
+   begin="0s"
+   fill="freeze"
+   repeatCount="indefinite"
+   path="M 0,0, 340,40, 0,0"
+/>
+  <animateMotion
+   xlink:href="#tool9"
+   dur="32s"
+   begin="0s"
+   fill="freeze"
+   repeatCount="indefinite"
+   path="M 0,0, -240, 140, -280, -250, 0,0"
+/>
+  <animateTransform attributeName="transform"
+            xlink:href="#tool10"
+            type="rotate"
+            from="0 420 290"
+            to="360 420 290"
+            begin="0s"
+            dur="24s"
+            repeatCount="indefinite"
+        />
+  <animateTransform attributeName="transform"
+            xlink:href="#tool11"
+            type="rotate"
+            from="0 420 290"
+            to="-360 420 290"
+            begin="0s"
+            dur="27s"
+            repeatCount="indefinite"
+        />
 </svg>
