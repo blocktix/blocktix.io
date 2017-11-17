@@ -84,6 +84,21 @@ gulp.task('copy-img', () => {
     .pipe($.connect.reload());
 });
 
+gulp.task('copy-data', () => {
+  return gulp.src([
+    `${sourceDirectory}CNAME`
+  ])
+    .pipe(gulp.dest(`${buildDirectory}`))
+    .pipe($.connect.reload());
+});
+gulp.task('copy-public', () => {
+  return gulp.src([
+    `${sourceDirectory}public/**/*.*`
+  ])
+    .pipe(gulp.dest(`${buildDirectory}public`))
+    .pipe($.connect.reload());
+});
+
 gulp.task('copy-fonts', () => {
   return gulp.src([
     `${sourceDirectory}font/*.{ttf,eot,woff,woff2,svg}`,
@@ -172,7 +187,7 @@ gulp.task('watch', () => {
 
 gulp.task('build', gulp.series(
   gulp.parallel('clean'),
-  gulp.parallel('build-pug', 'copy-fonts', 'build-vendor-js', 'build-js', 'copy-img'),
+  gulp.parallel('build-pug', 'copy-fonts', 'build-vendor-js', 'build-js', 'copy-img', 'copy-data', 'copy-public'),
   gulp.series('icon-font', 'build-vendor-css', 'build-css'),
   gulp.parallel('prettify')
 ));

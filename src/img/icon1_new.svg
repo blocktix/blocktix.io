@@ -365,15 +365,16 @@
    dur="1.5s"
    begin="group_1_move_phase3.end + 8s; group3_shadow_animate.end + 0.5s"
    fill="freeze"
-   path="M 0,0, 190,40, 300,160"
+   path="M0,0 C0,0 300,-40 300,161"
 />
+
 <animateMotion
    id="group_2_move_phase1"
    xlink:href="#group2"
    dur="1.5s"
    begin="group_2_move_phase3.end + 8s; group3_shadow_animate.end + 0.5s"
    fill="freeze"
-   path="M 0,0, -70,140, -150, 180, -300,210"
+   path="M 0,0, C-70,240, -150, 240, -300,210"
 />
 <animateMotion
    id="group_3_move_phase1"
@@ -381,7 +382,7 @@
    dur="1.5s"
    begin="group_3_move_phase3.end + 8s; group3_shadow_animate.end + 0.5s"
    fill="freeze"
-   path="M 0,0, 50,-295"
+   path="M 0,0, C-20,-150 -30,-150 50,-295"
 />
 
 <animateMotion
@@ -390,23 +391,25 @@
    dur="1.5s"
    begin="group_1_move_phase1.end + 1.3s"
    fill="freeze"
-   path="M 300,160, 150, 360, -50,380"
+   path="M 300,160, C250, 360, 250, 360 -50,380"
 />
+
 <animateMotion
    id="group_2_move_phase2"
    xlink:href="#group2"
    dur="1.5s"
    begin="group_2_move_phase1.end + 1.3s"
    fill="freeze"
-   path="M -300,210, -280, -120"
+   path="M -300,210, C-340,100 -360,0 -280, -120"
 />
+
 <animateMotion
    id="group_3_move_phase2"
    xlink:href="#group3"
    dur="1.5s"
    begin="group_3_move_phase1.end + 1.3s"
    fill="freeze"
-   path="M 50,-295, 200,-280, 340, -190"
+   path="M 50,-295, C200,-295 250,-300 340, -190"
 />
 
   <animateMotion
@@ -415,24 +418,24 @@
    dur="1.5s"
    begin="group_1_move_phase2.end + 1.2s"
    fill="freeze"
-   path="M -50,380, 0,0"
+   path="M -50,380, C-125,200 -95,100 0,0"
 />
+
   <animateMotion
    id="group_2_move_phase3"
    xlink:href="#group2"
    dur="1.5s"
    begin="group_2_move_phase2.end + 1.2s"
    fill="freeze"
-   path="M -280, -120, -120,-100, 0,0"
+   path="M -280,-120, C-100,-120 -100,-130 0,0"
 />
-
-  <animateMotion
+<animateMotion
    id="group_3_move_phase3"
    xlink:href="#group3"
    dur="1.5s"
    begin="group_3_move_phase2.end + 1.2s"
    fill="freeze"
-   path="M 340, -190, 340,-50, 0,0"
+   path="M 340,-190 C270,0 140,0 0,0"
 />
 
 

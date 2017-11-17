@@ -189,7 +189,7 @@
   <animate
     xlink:href="#coin1"
     attributeName="cy"
-    from="0"
+    from="-50"
     to="60"
     dur="2s"
     begin="coin1_opacity.end"
@@ -199,7 +199,7 @@
   <animate
     xlink:href="#coin2"
     attributeName="cy"
-    from="0"
+    from="-40"
     to="60"
     dur="2.7s"
     begin="coin2_opacity.end"
@@ -208,7 +208,7 @@
   <animate
     xlink:href="#coin3"
     attributeName="cy"
-    from="0"
+    from="-60"
     to="60"
     dur="3.8s"
     begin="coin3_opacity.end"
