@@ -278,8 +278,8 @@
 <animateMotion
    id="icon_lock_orbit_move"
    xlink:href="#icon_lock"
-   dur="1.2s"
-   begin="icon_cards_show.end; icon_news_orbit_move.end + 4s"
+   dur="2s"
+   begin="icon_cards_show.end; icon_news_orbit_move.end + 8s"
    fill="freeze"
    path="M 0,8, 200,-50, 300, -80, 400,-220, 350, -220, 50, -50, 0,8Z"
 />
@@ -287,8 +287,8 @@
 <animateMotion
    id="icon_news_orbit_move"
    xlink:href="#icon_news"
-   dur="1.2s"
-   begin="icon_cards_show.end; icon_lock_orbit_move.end + 4s"
+   dur="2s"
+   begin="icon_cards_show.end; icon_lock_orbit_move.end + 8s"
    fill="freeze"
    path="M 0,0, -60,0, -390,220, -370,220, -60,60, 0,0Z"
 />
@@ -296,8 +296,8 @@
 <animateMotion
    id="icon_phone_orbit_move"
    xlink:href="#icon_phone"
-   dur="1.2s"
-   begin="icon_cards_show.end; icon_lock_orbit_move.end + 4s"
+   dur="2s"
+   begin="icon_cards_show.end; icon_lock_orbit_move.end + 8s"
    fill="freeze"
    path="M 0,0, -390,-220, -320,-220, 0,0Z"
 />
@@ -305,8 +305,8 @@
 <animateMotion
    id="icon_phone_orbit_move"
    xlink:href="#icon_cards"
-   dur="1.2s"
-   begin="icon_cards_show.end; icon_lock_orbit_move.end + 4s"
+   dur="2s"
+   begin="icon_cards_show.end; icon_lock_orbit_move.end + 8s"
    fill="freeze"
    path="M 0,0, 50,-10, 390,220, 0,0Z"
 />
@@ -316,7 +316,7 @@
             type="rotate"
             from="0 0 30"
             to="-50 20 30"
-            begin="icon_cards_show.end - 0.4s; icon_lock_orbit_move.end + 3.1s"
+            begin="icon_cards_show.end - 0.4s; icon_lock_orbit_move.end + 7.1s"
             dur="0.4s"
             fill="freeze"
         />
@@ -325,7 +325,7 @@
             type="rotate"
             from="0 0 30"
             to="-80 20 40"
-            begin="icon_cards_show.end - 0.3s; icon_lock_orbit_move.end + 3.2s"
+            begin="icon_cards_show.end - 0.3s; icon_lock_orbit_move.end + 7.2s"
             dur="0.4s"
             fill="freeze"
         />
@@ -334,7 +334,7 @@
             type="rotate"
             from="0 0 30"
             to="-90 20 40"
-            begin="icon_cards_show.end - 0.2s; icon_lock_orbit_move.end + 3.3s"
+            begin="icon_cards_show.end - 0.2s; icon_lock_orbit_move.end + 7.3s"
             dur="0.4s"
             fill="freeze"
         />
@@ -366,4 +366,85 @@
             dur="0.4s"
             fill="freeze"
         />
+
+  <animate xlink:href="#tool1" attributeName="opacity" values="0;1" fill="freeze" dur="0.5s" begin="icon_cards_show.end" />
+  <animateMotion
+   xlink:href="#tool1"
+   dur="25s"
+   begin="icon_cards_show.end;"
+   repeatCount="indefinite"
+   fill="freeze"
+   path="M 0,0, -50,-250, 0,0, 150,-250, 0,0Z"
+/>
+
+  <animate xlink:href="#tool2" attributeName="opacity" values="0;1" fill="freeze" dur="0.5s" begin="icon_cards_show.end" />
+  <animateMotion
+   xlink:href="#tool2"
+   dur="50s"
+   begin="icon_cards_show.end;"
+   repeatCount="indefinite"
+   fill="freeze"
+   path="M 0,0, -350,-20, 150,-50, 0,0Z"
+/>
+
+    <animate xlink:href="#tool3" attributeName="opacity" values="0;1" fill="freeze" dur="0.5s" begin="icon_cards_show.end" />
+  <animateMotion
+   xlink:href="#tool3"
+   dur="20s"
+   begin="icon_cards_show.end;"
+   repeatCount="indefinite"
+   fill="freeze"
+   path="M 0,0, 250,-20, 150,-50, 0,0Z"
+/>
+
+<animate xlink:href="#tool4" attributeName="opacity" values="0;1" fill="freeze" dur="0.5s" begin="icon_cards_show.end" />
+  <animateMotion
+   xlink:href="#tool4"
+   dur="34s"
+   begin="icon_cards_show.end;"
+   repeatCount="indefinite"
+   fill="freeze"
+   path="M 0,0, -350,90, -350,-100, 0,0Z"
+/>
+
+<animate xlink:href="#tool5" attributeName="opacity" values="0;1" fill="freeze" dur="0.5s" begin="icon_cards_show.end" />
+  <animateMotion
+   xlink:href="#tool5"
+   dur="13s"
+   begin="icon_cards_show.end;"
+   repeatCount="indefinite"
+   fill="freeze"
+   path="M 0,0, 300, 145, 350, -80, 0,0Z"
+/>
+
+  <animateTransform attributeName="transform"
+            xlink:href="#tool5"
+            type="rotate"
+            from="0 150 150"
+            to="360 150 150"
+            begin="icon_cards_show.end;"
+            dur="15s"
+            repeatCount="indefinite"
+        />
+
+  <animate xlink:href="#tool6" attributeName="opacity" values="0;1" fill="freeze" dur="0.5s" begin="icon_cards_show.end" />
+  <animateMotion
+   xlink:href="#tool6"
+   dur="26s"
+   begin="icon_cards_show.end;"
+   repeatCount="indefinite"
+   fill="freeze"
+   path="M 0,0, -250, 150, 0,0Z"
+/>
+
+    <animateTransform attributeName="transform"
+            xlink:href="#tool6"
+            type="rotate"
+            from="0 150 150"
+            to="360 150 150"
+            begin="icon_cards_show.end;"
+            dur="15s"
+            repeatCount="indefinite"
+        />
+
 </svg>
