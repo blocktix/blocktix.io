@@ -245,18 +245,18 @@
   xlink:href="#hidder1"
   attributeName="x"
   values="320;520"
-  dur="0.4s"
+  dur="1s"
   begin="group1_phone_mic_animate.end"
   fill="freeze"
 />
-  <animate id="group2_animate" xlink:href="#group2" attributeName="opacity" values="0;1" dur="1.3s" begin="path1_show_animation.end" fill="freeze"/>
+  <animate id="group2_animate" xlink:href="#group2" attributeName="opacity" values="0;1" dur="2.3s" begin="path1_show_animation.end" fill="freeze"/>
   <animateTransform id="group2_cards_shadow_animate" attributeName="transform"
     type="translate"
     xlink:href="#cards-shadow"
     from="90, 0"
     to="0, 88"
     begin="path1_show_animation.end"
-    dur="0.8s"
+    dur="1.5s"
     fill="freeze"
 />
 <animateTransform id="group2_cards_card1_animate"
@@ -306,18 +306,19 @@
   xlink:href="#hidder2"
   attributeName="x"
   values="296;-200"
-  dur="0.4s"
+  dur="1.4s"
   begin="group2_animate.end"
   fill="freeze"
 />
-<animate id="group3_animate" xlink:href="#group3" attributeName="opacity" values="0;1" dur="1.3s" begin="path2_show_animation.end" fill="freeze"/>
+<animate id="group3_animate" xlink:href="#group3" attributeName="opacity" values="0;1" dur="2.3s" begin="path2_show_animation.end" fill="freeze"/>
+<animate xlink:href="#list-shadow" attributeName="opacity" values="0;1" dur="0.4s" begin="path2_show_animation.end" fill="freeze" />
 <animateTransform id="group3_shadow_animate" attributeName="transform"
     type="translate"
     xlink:href="#list-shadow"
     from="100, 200"
     to="159.500000, 159.500000"
     begin="path2_show_animation.end"
-    dur="0.8s"
+    dur="1.8s"
     fill="freeze"
 />
 <animateTransform id="group3_list_animate" attributeName="transform"
@@ -326,7 +327,7 @@
   from="150, 150"
   to="96.000000, 82.000000"
   begin="path2_show_animation.end"
-  dur="0.8s"
+  dur="1.5s"
   fill="freeze"
 />
 
@@ -336,7 +337,7 @@
   from="-150, -150"
   to="20, 0"
   begin="group3_list_animate.end"
-  dur="0.15s"
+  dur="0.5s"
   fill="freeze"
 />
   <animate id="wave1_pulse" xlink:href="#phone-mic-wave-1" attributeName="opacity" values="1;0;1"  dur="2s" begin="group1_phone_mic_animate.end;wave2_pulse.end"/>

@@ -154,22 +154,22 @@
             </g>
         </g>
     </g>
-  <animate id="shield_body_animate" xlink:href="#shield-body" attributeName="opacity" values="0;1" fill="freeze"  dur="1s" />
+  <animate id="shield_body_animate" xlink:href="#shield-body" attributeName="opacity" values="0;1" fill="freeze"  dur="1.5s" />
   <animateTransform
   id="shield_body_animation"
   attributeName="transform"
   xlink:href="#shield-body"
   type="translate"
-  from="0, 1000"
+  from="0, 500"
   to="0, 0"
   begin="0s"
-  dur="0.5s"
+  dur="1s"
   repeatCount="0"
 />
- <animate id="shield_tick_animate" xlink:href="#shield-tick" attributeName="opacity" values="0;0;0;1" fill="freeze" dur="1s" begin="shield_body_animation.end" />
+ <animate id="shield_tick_animate" xlink:href="#shield-tick" attributeName="opacity" values="0;0;0;1" fill="freeze" dur="1.5s" begin="shield_body_animation.end" />
 
 
-  <animate id="mic_icon_opacity" xlink:href="#mic-icon" attributeName="opacity" values="0;1" fill="freeze" dur="1s" begin="shield_tick_animate.end" />
+  <animate id="mic_icon_opacity" xlink:href="#mic-icon" attributeName="opacity" values="0;1" fill="freeze" dur="1.8s" begin="shield_tick_animate.end + 3s" />
   <animateTransform
   id="mic_icon_animation"
   attributeName="transform"
@@ -177,8 +177,8 @@
   type="translate"
   from="0, 1000"
   to="74.996947, 265.117334"
-  begin="shield_tick_animate.end"
-  dur="0.5s"
+  begin="shield_tick_animate.end + 3s"
+  dur="1.5s"
   fill="freeze"
 />
 
@@ -190,22 +190,22 @@
   type="translate"
   from="1000, -1000"
   to="40, 55"
-  begin="shield_tick_animate.end"
+  begin="shield_tick_animate.end + 2s"
   dur="0.5s"
   fill="freeze"
 />
-<animate xlink:href="#vote-icon" id="vote_icon_animate" attributeName="opacity" values="0;1" fill="freeze" dur="0.7s" begin="shadow_animate.end" />
+<animate xlink:href="#vote-icon" id="vote_icon_animate" attributeName="opacity" values="0;1" fill="freeze" dur="1.2s" begin="mic_icon_animation.end + 1s" />
 <animateTransform
+  id="vote_icon_animate"
   attributeName="transform"
   xlink:href="#vote-icon"
   type="translate"
-  from="-200, -200"
+  from="-1000, -1000"
   to="18.996947, 57.117334"
-  begin="shadow_animate.end"
-  dur="0.3s"
+  begin="mic_icon_animation.end + 1s"
+  dur="1s"
   fill="freeze"
 />
-
 
 <animate xlink:href="#hands-big" attributeName="opacity" values="0;1" fill="freeze" dur="0.5s" begin="vote_icon_animate.end" />
 <animateTransform
@@ -231,26 +231,26 @@
   fill="freeze"
 />
 
-<animate id="concert_icon_animate" xlink:href="#concert-icon" attributeName="opacity" values="0;1" fill="freeze" dur="1s" begin="hands_left_animate.end" />
-  <animateTransform
+<animate id="concert_icon_animate" xlink:href="#concert-icon" attributeName="opacity" values="0;1" fill="freeze" dur="1.5s" begin="vote_icon_animate.end + 0.2s" />
+<animateTransform
   attributeName="transform"
   xlink:href="#concert-icon"
   type="translate"
   from="1000, -1000"
   to="235.996947, 42.117334"
-  begin="hands_left_animate.end"
-  dur="0.5s"
+  begin="vote_icon_animate.end + 0.2s"
+  dur="1s"
   fill="freeze"
 />
-  <animate xlink:href="#order-icon" attributeName="opacity" values="0;1" fill="freeze" dur="1s" begin="concert_icon_animate.end" />
+  <animate xlink:href="#order-icon" attributeName="opacity" values="0;1" fill="freeze" dur="1.9s" begin="concert_icon_animate.end + 1s" />
   <animateTransform
   attributeName="transform"
   xlink:href="#order-icon"
   type="translate"
   from="1000, 1000"
   to="235.996947, 212.117334"
-  begin="hands_left_animate.end"
-  dur="0.5s"
+  begin="concert_icon_animate.end + 0.1s"
+  dur="1.5s"
   fill="freeze"
 />
 <animateTransform
