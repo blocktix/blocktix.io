@@ -281,25 +281,23 @@
    dur="2s"
    begin="icon_cards_show.end; icon_news_orbit_move.end + 8s"
    fill="freeze"
-   path="M 0,8, 200,-50, 300, -80, 400,-220, 350, -220, 50, -50, 0,8Z"
+   path="M 0,8 C0,-150 400,-300 400,-220 C250,0 50,10 0,8Z"
 />
-
 <animateMotion
    id="icon_news_orbit_move"
    xlink:href="#icon_news"
    dur="2s"
    begin="icon_cards_show.end; icon_lock_orbit_move.end + 8s"
    fill="freeze"
-   path="M 0,0, -60,0, -390,220, -370,220, -60,60, 0,0Z"
+   path="M0,0 C50,120 -370,250 -370,220 C-370,100 -60,-60 0,0Z"
 />
-
 <animateMotion
    id="icon_phone_orbit_move"
    xlink:href="#icon_phone"
    dur="2s"
    begin="icon_cards_show.end; icon_lock_orbit_move.end + 8s"
    fill="freeze"
-   path="M 0,0, -390,-220, -320,-220, 0,0Z"
+   path="M 0,0, C0,40 -300,-100 -390,-220 C-340,-280 -50, -100 0,0Z"
 />
 
 <animateMotion
@@ -308,7 +306,7 @@
    dur="2s"
    begin="icon_cards_show.end; icon_lock_orbit_move.end + 8s"
    fill="freeze"
-   path="M 0,0, 50,-10, 390,220, 0,0Z"
+   path="M 0,0, C120,-50 390,170 390,220 C390, 280 0,90 0,0Z"
 />
 
   <animateTransform attributeName="transform"
