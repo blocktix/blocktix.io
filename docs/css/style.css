@@ -1685,6 +1685,7 @@ header .mobile {
   display: -ms-flexbox;
   display: flex;
   margin: 3vh auto 0;
+  max-width: 100%;
   overflow: hidden;
   padding-bottom: 5vh;
   width: 120.6vh;

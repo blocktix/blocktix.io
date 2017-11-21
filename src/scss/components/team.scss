@@ -49,6 +49,7 @@ $element_with_padding: 40.2vh;
     .cards {
       display: flex;
       margin: 3vh auto 0 auto;
+      max-width: 100%;
       overflow: hidden;
       padding-bottom: 5vh;
       width: $element_with_padding * 3;
