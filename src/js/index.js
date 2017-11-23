@@ -70,22 +70,25 @@ document.addEventListener("DOMContentLoaded", function() {
         document.querySelector('a[href*=' + i + ']').parentNode.classList.add('active')
       }
     }
-
-    Array.prototype.forEach.call(
-        document.querySelectorAll('img.svg_animation'),
-        function(elm){
-          if (elementInViewport(elm)){
-            if (elm.classList.contains('invisible')){
-              elm.classList.remove('invisible')
-              elm.src = elm.src.replace(/\?rnd\=.*$/, "?rnd=" + Math.random())
-            }
-            elm.classList.add('active')
-          } else{
-            elm.classList.add('invisible')
-          }
-    })
   }, 25);
+
+  var reloadImages = debounce(function(){
+    Array.prototype.forEach.call(
+      document.querySelectorAll('img.svg_animation'),
+      function(elm){
+        if (elementInViewport(elm)){
+          if (elm.classList.contains('invisible')){
+            elm.classList.remove('invisible')
+            elm.src = elm.src
+          }
+          elm.classList.add('active')
+        } else{
+          elm.classList.add('invisible')
+        }
+    })
+  }, 300);
   window.addEventListener('scroll', scroll_watch);
+  window.addEventListener('scroll', reloadImages);
 
   initSlider(document.querySelector('.cards'))
   window.onresize = function(){
