@@ -1,4 +1,5 @@
 const gulp = require('gulp')
+const pug = require('gulp-pug-i18n');
 const $ = require('gulp-load-plugins')();
 const cssConfig = require('./config/csscomb.json');
 const fs = require('fs');
@@ -20,7 +21,27 @@ const getPluginsPaths = type => {
 gulp.task('build-pug', () => {
   return gulp.src(`${sourceDirectory}pug/*.pug`)
     .pipe($.plumber())
-    .pipe($.pug({ pretty: true }))
+    .pipe(pug({
+      i18n: {
+        locales: `${sourceDirectory}locales/*.json`,
+        filename: '{{basename}}_{{lang}}.html'
+      },
+      pretty: true
+    }))
+    .pipe(gulp.dest(buildDirectory))
+    .pipe($.connect.reload());
+});
+
+gulp.task('build-pug-default_locale', () => {
+  return gulp.src(`${sourceDirectory}pug/*.pug`)
+    .pipe($.plumber())
+    .pipe(pug({
+      i18n: {
+        locales: `${sourceDirectory}locales/en.json`,
+        filename: '{{basename}}.html'
+      },
+      pretty: true
+    }))
     .pipe(gulp.dest(buildDirectory))
     .pipe($.connect.reload());
 });
@@ -40,6 +61,7 @@ gulp.task('build-css', () => {
   return gulp.src([
     `${sourceDirectory}scss/*.scss`,
     `${sourceDirectory}scss/icons/*.scss`,
+    `${sourceDirectory}scss/animations/*.scss`,
     `${sourceDirectory}scss/components/**/*.scss`
   ])
     .pipe($.plumber())
@@ -76,9 +98,25 @@ gulp.task('copy-img', () => {
   return gulp.src([
     `${sourceDirectory}img/*.{jpg,jpeg,png,svg,gif,ico,json}`,
     `${sourceDirectory}img/**/*.{jpg,jpeg,png,svg,gif,ico,json,xml}`,
+    `${sourceDirectory}img/**/**/*.{png,svg}`,
     ...getPluginsPaths('img')
   ])
     .pipe(gulp.dest(`${buildDirectory}img`))
+    .pipe($.connect.reload());
+});
+
+gulp.task('copy-data', () => {
+  return gulp.src([
+    `${sourceDirectory}CNAME`
+  ])
+    .pipe(gulp.dest(`${buildDirectory}`))
+    .pipe($.connect.reload());
+});
+gulp.task('copy-public', () => {
+  return gulp.src([
+    `${sourceDirectory}public/**/*.*`
+  ])
+    .pipe(gulp.dest(`${buildDirectory}public`))
     .pipe($.connect.reload());
 });
 
@@ -161,6 +199,7 @@ gulp.task('watch', () => {
   });
 
   gulp.watch(`${sourceDirectory}pug/**/*.pug`, gulp.parallel('build-pug'));
+  gulp.watch(`${sourceDirectory}pug/**/*.pug`, gulp.parallel('build-pug-default_locale'));
   gulp.watch(`${sourceDirectory}scss/**/*.scss`, gulp.parallel('build-css'));
   gulp.watch(`${sourceDirectory}js/**/*.js`, gulp.parallel('build-js'));
   gulp.watch(`${sourceDirectory}img/*.*`, gulp.parallel('copy-img'));
@@ -170,7 +209,7 @@ gulp.task('watch', () => {
 
 gulp.task('build', gulp.series(
   gulp.parallel('clean'),
-  gulp.parallel('build-pug', 'copy-fonts', 'build-vendor-js', 'build-js', 'copy-img'),
+  gulp.parallel('build-pug', 'build-pug-default_locale', 'copy-fonts', 'build-vendor-js', 'build-js', 'copy-img', 'copy-data', 'copy-public'),
   gulp.series('icon-font', 'build-vendor-css', 'build-css'),
   gulp.parallel('prettify')
 ));

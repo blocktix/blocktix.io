@@ -14,6 +14,26 @@ var debounce = function(func, wait, immediate) {
   }
 }
 
+var elementInViewport = function(el) {
+  var top = el.offsetTop;
+  var left = el.offsetLeft;
+  var width = el.offsetWidth;
+  var height = el.offsetHeight;
+
+  while(el.offsetParent) {
+    el = el.offsetParent;
+    top += el.offsetTop;
+    left += el.offsetLeft;
+  }
+
+  return (
+    (top + height) >= window.pageYOffset &&
+    left >= window.pageXOffset &&
+    top <= (window.pageYOffset + window.innerHeight) &&
+    (left + width) <= (window.pageXOffset + window.innerWidth)
+  );
+}
+
 document.addEventListener("DOMContentLoaded", function() {
   var menu = document.querySelector('.mobile')
   var elements = Array.from(document.querySelectorAll('.scroll_watch'))
@@ -51,7 +71,24 @@ document.addEventListener("DOMContentLoaded", function() {
       }
     }
   }, 25);
+
+  var reloadImages = debounce(function(){
+    Array.prototype.forEach.call(
+      document.querySelectorAll('img.svg_animation'),
+      function(elm){
+        if (elementInViewport(elm)){
+          if (elm.classList.contains('invisible')){
+            elm.classList.remove('invisible')
+            elm.src = elm.src
+          }
+          elm.classList.add('active')
+        } else{
+          elm.classList.add('invisible')
+        }
+    })
+  }, 300);
   window.addEventListener('scroll', scroll_watch);
+  window.addEventListener('scroll', reloadImages);
 
   initSlider(document.querySelector('.cards'))
   window.onresize = function(){

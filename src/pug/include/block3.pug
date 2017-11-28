@@ -1,7 +1,7 @@
 section.block.block3
   .wrapper
-    h2.red HOW IT WORKS
-    h2 CREATING EVENTS
+    h2.red= $i18n.block3_header
+    h2= $i18n.block3_subheader
     .tree
       .row
         .col.img
@@ -9,16 +9,16 @@ section.block.block3
         .col.description
           i.point 1
           span
-            | Signup and select your event’s
+            = $i18n.block3_node1_line1
             br
-            | specific details
+            = $i18n.block3_node1_line2
       .row
         .col.description
           i.point 2
           span
-            | Incentivise the community
+            = $i18n.block3_node2_line1
             br
-            | with TIX Tokens
+            = $i18n.block3_node2_line2
         .col.img
           img(src="./img/block3_2.svg")
       .row
@@ -26,4 +26,4 @@ section.block.block3
           img(src="./img/block3_3.svg")
         .col.description
           i.point 3
-          span Sell tickets
+          span= $i18n.block3_node3

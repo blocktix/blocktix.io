@@ -5,22 +5,23 @@
 
   const getBackgroundImageProperty = image => `background-image:url(img/${image});`
   const memberImage = member => `./img/${member.image}`
+  const animation = file => `./img/${file}?rnd=${Math.random()}`
 
   const menu_items = [
-    {title: "Create Events", name: "create_events"},
-    {title: "Attend Events", name: "attend_events"},
-    {title: "TIX Tokens", name: "tix_tokens"},
-    {title: "Team", name: "team"},
-    {title: "FAQ", name: "faq"},
-    {title: "Sign Up", name: "signup"}
+    {title: $i18n.menu_create_events, name: "create_events"},
+    {title: $i18n.menu_attend_events, name: "attend_events"},
+    {title: $i18n.menu_tix_tokens, name: "tix_tokens"},
+    {title: $i18n.menu_team, name: "team"},
+    {title: $i18n.menu_faq, name: "faq"},
+    {title: $i18n.menu_signup, name: "signup"}
   ]
 
   const team = [
     {
       image: "t3.png",
-      position: "CEO",
-      name: "Rob Schins",
-      description: "With over one year experience as Community Manager for projects like Blackcoin and ShadowCash, Rob now joins the Blocktix Team. His task: to manage the project from idea to execution.",
+      position: $i18n.team_rob_position,
+      name: $i18n.team_rob_name,
+      description: $i18n.team_rob_description,
       links: {
         linkedin: "https://www.linkedin.com/in/robschins",
         twitter_n: "https://twitter.com/soepkipcrypto"
@@ -28,9 +29,9 @@
     },
     {
       image: "t4.png",
-      position: "CTO",
-      name: "Ryno Mathee",
-      description: "Ryno is the architect of Blocktix, and has a proven track record in cryptocurrency development. He is the Lead Developer of The Particl Project, and was the founder of ShadowCash, which later grew into The Shadow Project.",
+      position: $i18n.team_ryno_position,
+      name: $i18n.team_ryno_name,
+      description: $i18n.team_ryno_description,
       links: {
         linkedin: "https://za.linkedin.com/in/rmathee",
         github: "https://github.com/rynomster",
@@ -39,18 +40,18 @@
     },
     {
       image: "t2.png",
-      position: "Project Assistant",
-      name: "Bojan Malešević",
-      description: "A big love for crypto and always willing to help awesome projects out, Bojan joins the Blocktix team as the Project's Assistant. Always ready to help out in any way he can: putting out fires, talking with the community and more.",
+      position: $i18n.team_bojan_position,
+      name: $i18n.team_bojan_name,
+      description: $i18n.team_bojan_description,
       links: {
         twitter_n: "https://twitter.com/w000tBot"
       }
     },
     {
       image: "t1.png",
-      position: "Advisor",
-      name: "Marshall Hayner",
-      description: "Marshall provides Blocktix with invaluable insight and advice. He is also the CEO of MetalPay, a groundbreaking value generator that rewards every transaction.",
+      position: $i18n.team_marshal_position,
+      name: $i18n.team_marshal_name,
+      description: $i18n.team_marshal_description,
       links: {
         twitter_n: "https://twitter.com/marshallHayner"
       }
