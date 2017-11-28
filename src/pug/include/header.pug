@@ -10,21 +10,17 @@ header
   .wrapper.menu
 
     section
-      h1
-        | Find or start remarkable events,
-        | let the platform do the rest
-      p.thin
-        | We connect event organizers with an incentivised community who actively
-        br
-        | reduce the associated costs of event hosting by up to 90%
-      p Learn more about how Blocktix can meet your needs
+      h1= $i18n.header_title
+      p.thin= $i18n.header_subtitle1
+
+      p= $i18n.header_subtitle2
       p.buttons
         span.navigation_link
           a(href="#create_events").btn
-            span Creating events
+            span= $i18n.button_creating_events
         span.navigation_link
           a(href="#attending").btn
-            span Attending events
+            span= $i18n.button_attending_events
 
 
 

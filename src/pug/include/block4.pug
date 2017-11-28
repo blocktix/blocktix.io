@@ -1,20 +1,20 @@
 section.block.block4
   .wrapper
-    h2#attending ATTENDING EVENTS
+    h2#attending= $i18n.block4_header
     .tree
       .row
         .col
           img(src="./img/block4_1.svg")
         .col.description
           i.point 1
-          span Signup and download the app
+          span= $i18n.block4_node1
       .row
         .col.description
           i.point 2
           span
-            | Browse events to vett, attend
+            = $i18n.block4_node2_line1
             br
-            | or preview
+            = $i18n.block4_node2_line2
         .col
           img(src="./img/block4_2.svg")
       .row
@@ -22,4 +22,4 @@ section.block.block4
           img(src="./img/block4_3.svg")
         .col.description
           i.point 3
-          span Earn or redeem credits
+          span= $i18n.block4_node3

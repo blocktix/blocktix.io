@@ -1,11 +1,10 @@
 section.block.block1
   .row.wrapper
     .col.overview
-      h1 INCENTIVIZE YOUR AUDIENCE
-      p Use the power of the crowd to reduce distribution, transfer and promotional costs by up to 90% with our decentralized solution.The platform is a direct link to an active community financially incentivized to engage with your advertising, vett your events and more.
-
-      p Sign up for launch news and get notified about when you can get the wheels turning and sell some tickets.
+      h1= $i18n.block1_header
+      p= $i18n.block1_description
+      p= $i18n.block1_paragraph
       p.navigation_link
-        a.btn(href="#signup", onclick="document.querySelector('#MERGE3').options.selectedIndex = 1;") Sign up for news
+        a.btn(href="#signup", onclick="document.querySelector('#MERGE3').options.selectedIndex = 1;")= $i18n.button_sign_up
     .col.visual
       img(src=animation("icon1_new.svg")).svg_animation

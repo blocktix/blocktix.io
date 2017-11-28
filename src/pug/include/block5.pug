@@ -1,13 +1,10 @@
 section.block.block5
-  h2.red SECURITY
+  h2.red= $i18n.block5_header
   .row.wrapper
     .col.overview
-      h1 TICKETS YOU CAN TRUST
-      p
-        | Utilising Ethereum-based blockchain, Blocktix provides a simple and secure solution
-        | to distribute counterfeit-proof event tickets as well as facilitate trustless
-        | p2p transfers of ownership.
-      p The smart contracts are provably secure and undergo rigorous external security auditing.
+      h1= $i18n.block5_subheader
+      p= $i18n.block5_description
+      p= $i18n.block5_paragraph
 
     .col.visual
       img(src=animation("icon3_new.svg")).svg_animation.visual
