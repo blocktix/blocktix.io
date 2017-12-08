@@ -1,6 +1,6 @@
 $slider_width: 80%;
-$element: 40rem;
-$element_with_padding: 40.2rem;
+$element: 40vh;
+$element_with_padding: 40.2vh;
 .block {
   &.team {
     background-image: url(../img/block_gray_bg_rotate.svg?rnd=22);
@@ -85,16 +85,16 @@ $element_with_padding: 40.2rem;
             flex-direction: column;
             flex-wrap: wrap;
             line-height: auto;
-            margin-left: 3.2rem;
+            margin-left: 4.5vh;
             div {
-              font-size: 1.3rem;
-              height: 1.9rem;
+              font-size: 1.8vh;
+              height: 2.5vh;
               &.name {
                 font-weight: bold;
               }
               &.position {
                 color: #bababa;
-                font-size: 1rem;
+                font-size: 1.5vh;
               }
             }
           }
@@ -102,7 +102,7 @@ $element_with_padding: 40.2rem;
         .card-content {
           color: #676767;
           display: block;
-          font-size: 1.35rem;
+          font-size: 1.8vh;
           line-height: 160%;
           min-height: 10vh;
           white-space: wrap;
