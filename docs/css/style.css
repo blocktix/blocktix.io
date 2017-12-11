@@ -1431,7 +1431,7 @@ footer nav ul {
 }
 
 footer nav ul li {
-  font-size: 1.4rem;
+  font-size: 1.4vh;
   margin: 0 2vh;
 }
 
@@ -1563,7 +1563,7 @@ header .fixed .wrapper nav ul li a {
 
 header .wrapper section {
   color: #fff;
-  margin: 25vh auto 5vh;
+  margin: 21vh auto 5vh;
   position: relative;
   text-align: center;
   width: 50%;
@@ -1688,16 +1688,18 @@ header .mobile {
   display: flex;
   margin: 3vh auto 0;
   max-width: 100%;
+  max-width: 98%;
   overflow: hidden;
   padding-bottom: 5vh;
-  width: 120.6rem;
+  width: 120.6vh;
 }
 
 .block.team .cards li {
   display: inline-block;
   flex-shrink: 0;
+  max-width: 98%;
   position: relative;
-  width: 40rem;
+  width: 40vh;
   -ms-flex-negative: 0;
 }
 
@@ -1707,7 +1709,7 @@ header .mobile {
   box-shadow: 0 2px 20px 0 hsla(0,0%,56%,.08);
   color: #000;
   flex-direction: column;
-  font-size: 2vh;
+  font-size: 2rem;
   justify-content: flex-start;
   margin: 0 10px;
   overflow: hidden;
@@ -1811,7 +1813,7 @@ header .mobile {
 
 @media (min-width:1500px) {
   .block.team .cards {
-    width: 160.8rem;
+    width: 160.8vh;
   }
 }
 
@@ -1843,7 +1845,7 @@ header .mobile {
   }
 
   .block.team .cards {
-    width: 80.4rem;
+    width: 80.4vh;
   }
 }
 
@@ -2223,7 +2225,7 @@ header .mobile {
   }
 
   .block.team .cards {
-    width: 40.2rem;
+    width: 40.2vh;
   }
 
   .block.team .cards .card {

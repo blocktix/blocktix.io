@@ -1,6 +1,6 @@
 $slider_width: 80%;
-$element: 40rem;
-$element_with_padding: 40.2rem;
+$element: 40vh;
+$element_with_padding: 40.2vh;
 .block {
   &.team {
     background-image: url(../img/block_gray_bg_rotate.svg?rnd=22);
@@ -50,12 +50,14 @@ $element_with_padding: 40.2rem;
       display: flex;
       margin: 3vh auto 0 auto;
       max-width: 100%;
+      max-width: 98%;
       overflow: hidden;
       padding-bottom: 5vh;
       width: $element_with_padding * 3;
       li {
         display: inline-block;
         flex-shrink: 0;
+        max-width: 98%;
         position: relative;
         width: $element;
       }
@@ -66,7 +68,7 @@ $element_with_padding: 40.2rem;
         color: #000;
         display: flex;
         flex-direction: column;
-        font-size: 2vh;
+        font-size: 2rem;
         justify-content: flex-start;
         margin: 0 10px;
         overflow: hidden;
