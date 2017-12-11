@@ -6,7 +6,7 @@
   "menu_create_events": "Create Events",
   "menu_attend_events": "Attend Events",
   "menu_tix_tokens": "TIX Tokens",
-  "menu_team": "Team",
+  "menu_team": "Span",
   "menu_faq": "FAQ",
   "menu_signup": "Sign Up",
 
@@ -22,7 +22,7 @@
   "block2_description": "Join our active community of event vetters, who earn and redeem credits by vetting and attending events, writing reviews for events they’ve already attended and watching advertisements for events they might want to attend later.",
   "block2_parapgraph": "Sign up for launch news and be notified about when you can start earning credits and attending events.",
 
-  "block3_header": "HOW IT WORKS",
+  "block3_header": "HOE DIT WERK",
   "block3_subheader": "CREATING EVENTS",
   "block3_node1_line1": "Signup and select your event’s",
   "block3_node1_line2": "specific details",
@@ -47,7 +47,7 @@
   "block6_description": "Blocktix fees compensate token holders participating in the event/advertising verification process, to discourage for-profit ticket trading (scalping) on the P2P exchange, and to incentivise mobile application users to view event advertisements. There should be no expectation of profit from TIX token ownership or from the Blocktix system.",
   "block6_paragraph": "The Blocktix platform will require TIX Tokens to be used as a system access fee as well as to introduce new events to the event feed. TIX tokens will also be required to place in-application advertising. TIX and/or ETH tokens will be necessary to facilitate ticket purchases and P2P transfers. The hosting, transfer and marketing fees will be distributed to TIX token holders who participate in the event/advertisment verification process which will be available to all TIX holders on the platform",
 
-  "team_header": "our team",
+  "team_header": "ons span",
   "team_rob_name": "Rob Schins",
   "team_rob_position": "CEO",
   "team_rob_description": "With over one year experience as Community Manager for projects like Blackcoin and ShadowCash, Rob now joins the Blocktix Team. His task: to manage the project from idea to execution.",
@@ -72,7 +72,7 @@
   "faq_hardcoded_symbol": "Symbol: TIX",
   "faq_hardcoded_decimals": "Decimals: 18",
   "faq_hardcoded_supply": "Max Supply: 62,500,000",
-  "faq_hardcoded_address": "Address: ",
+  "faq_hardcoded_address": "Adres:",
   "faq_hardcoded_download_button": "Download whitepaper",
   "faq_questions": [
     {
@@ -125,6 +125,6 @@
   "footer_header": "Subscribe Us for Updates",
   "footer_description_line1": "We'd love it if you could subscribe",
   "footer_description_line2": "and stay in touch (we don't spam).",
-  "footer_follow_us": "Follow Us:",
+  "footer_follow_us": "Volg Ons:",
   "footer_copyright": "© All Rights Reserved."
 }

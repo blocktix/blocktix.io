@@ -25,6 +25,9 @@ section.block.faq
             i.icon_chevron-right
           .answer
             = question.body
+            - if (question.blog)
+              a(href="https://blog.blocktix.io")
+                = question.blog
             - if (typeof(question.lines) === "object")
               ul
                 each line in question.lines

@@ -910,7 +910,7 @@ h2 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  font-size: 1.2rem;
+  font-size: 2vh;
   justify-content: flex-start;
   text-align: left;
   -webkit-box-align: center;
@@ -1076,7 +1076,7 @@ h2 {
 
 .block {
   color: #2d2d2d;
-  font-size: 2.2vw;
+  font-size: 2.2vh;
   font-weight: 200;
 }
 
@@ -1109,11 +1109,11 @@ h2 {
 .block h2.red {
   color: #ef494d;
   font-family: Gotham;
-  font-size: 2rem;
+  font-size: 3vh;
 }
 
 .block p {
-  font-size: 1.3rem;
+  font-size: 2vh;
   line-height: 140%;
   padding-bottom: 1.2vw;
 }
@@ -1148,7 +1148,7 @@ h2 {
   border-radius: 4px;
   color: #fff;
   display: inline-block;
-  font-size: 1.2rem;
+  font-size: 1.7vh;
   font-weight: bolder;
   margin-top: 2vh;
   padding: .8vh 2.3vh;
@@ -1209,13 +1209,13 @@ h2 {
 }
 
 .block.faq h1 {
-  font-size: 2.5rem;
+  font-size: 3vh;
 }
 
 .block.faq .questions {
   border-radius: 4px;
   box-shadow: 0 2px 2px 0 rgba(0,0,0,.14),0 3px 1px -2px rgba(0,0,0,.2),0 1px 5px 0 rgba(0,0,0,.12);
-  margin-top: 3rem;
+  margin-top: 3vh;
   width: 100%;
 }
 
@@ -1224,7 +1224,7 @@ h2 {
   border-bottom: 1px solid #fff;
   color: #fff;
   flex-wrap: nowrap;
-  font-size: 1.3rem;
+  font-size: 2vh;
   font-weight: bolder;
   justify-content: space-between;
   -webkit-box-pack: justify;
@@ -1299,7 +1299,7 @@ h2 {
 }
 
 .block.faq .questions .question.active .answer {
-  font-size: 1.1rem;
+  font-size: 2vh;
   max-height: 1000px;
   opacity: 1;
   padding: 2vh;
@@ -1314,17 +1314,17 @@ footer {
 }
 
 footer h1 {
-  font-size: 2.8rem;
+  font-size: 4vh;
   font-weight: 400;
   text-align: center;
 }
 
 footer h1.follow_us {
-  margin-top: 4rem;
+  margin-top: 4vh;
 }
 
 footer p {
-  font-size: 2rem;
+  font-size: 2vh;
   padding: 2vh 0;
   text-align: center;
 }
@@ -1350,9 +1350,9 @@ footer form input[type=email] {
   border-right: 0;
   color: #fff;
   flex-shrink: .5;
-  font-size: 1.2rem;
+  font-size: 1.5vh;
   margin: 0;
-  padding: 1.4rem;
+  padding: 2vh;
   width: 50%;
   -ms-flex-negative: .5;
 }
@@ -1394,7 +1394,7 @@ footer .icons .icon {
   background: #fff;
   border-radius: 5px;
   color: #4e4e4e;
-  font-size: 2rem;
+  font-size: 3vh;
   height: 8vh;
   margin: 0 1vh;
   max-height: 34px;
@@ -1431,14 +1431,16 @@ footer nav ul {
 }
 
 footer nav ul li {
+<<<<<<< HEAD
   font-size: 1.4vh;
+=======
+>>>>>>> 9f2b23d6ca9eb1f9c8e186a0b1f2494827e5e5eb
   margin: 0 2vh;
 }
 
 footer p.copy {
-  font-size: 1.2rem;
   font-weight: bolder;
-  margin-top: 5rem;
+  margin-top: 5vh;
 }
 
 .response {
@@ -1493,7 +1495,7 @@ header:after {
 }
 
 header .fixed {
-  padding: .6vh;
+  padding: .6vw;
   position: fixed;
   transition: all 1s;
   width: 100%;
@@ -1518,7 +1520,7 @@ header .fixed .wrapper {
 
 header .fixed .wrapper .logo {
   color: #fff;
-  font-size: 1.3rem;
+  font-size: 2.3vh;
 }
 
 header .fixed .wrapper a.toggle_menu {
@@ -1542,8 +1544,8 @@ header .fixed .wrapper nav ul {
 }
 
 header .fixed .wrapper nav ul li {
-  font-size: .9rem;
-  padding: .2rem .5rem;
+  font-size: 1vw;
+  padding: .4vw 1vw;
 }
 
 header .fixed .wrapper nav ul li.background {
@@ -1574,14 +1576,14 @@ header .wrapper section {
 header .wrapper section h1 {
   color: #f0f0f0;
   font-family: Helvetica;
-  font-size: 2.7rem;
+  font-size: 4.2vh;
   font-weight: 600;
   line-height: 110%;
-  padding-bottom: 2vw;
+  padding-bottom: 2vh;
 }
 
 header .wrapper section p {
-  font-size: 1.3rem;
+  font-size: 1.6vh;
   margin: 0 auto;
   padding-top: 2vh;
   width: 90%;
@@ -1608,10 +1610,10 @@ header .wrapper section .buttons .btn {
   border-radius: 5px;
   color: #fff;
   cursor: pointer;
-  font-size: 1rem;
+  font-size: 1.4vh;
   font-weight: 500;
   margin-left: .5vh;
-  padding: .7rem 2rem;
+  padding: .9vh 4vh;
   text-decoration: none;
   white-space: nowrap;
 }
@@ -1748,7 +1750,7 @@ header .mobile {
   flex-direction: column;
   flex-wrap: wrap;
   line-height: auto;
-  margin-left: 3.2rem;
+  margin-left: 4.5vh;
   -webkit-box-direction: normal;
   -webkit-box-orient: vertical;
   -ms-flex-direction: column;
@@ -1756,8 +1758,8 @@ header .mobile {
 }
 
 .block.team .cards .card .card-header .person div {
-  font-size: 1.3rem;
-  height: 1.9rem;
+  font-size: 1.8vh;
+  height: 2.5vh;
 }
 
 .block.team .cards .card .card-header .person div.name {
@@ -1766,13 +1768,13 @@ header .mobile {
 
 .block.team .cards .card .card-header .person div.position {
   color: #bababa;
-  font-size: 1rem;
+  font-size: 1.5vh;
 }
 
 .block.team .cards .card .card-content {
   color: #676767;
   display: block;
-  font-size: 1.35rem;
+  font-size: 1.8vh;
   line-height: 160%;
   min-height: 10vh;
   white-space: wrap;
