@@ -1,0 +1,10 @@
+section.block.advisors
+  h2.red= $i18n.advisors_header
+  ul.cards
+    each member, k in advisors
+      li
+        +card(member)
+  ul.navigation
+
+
+

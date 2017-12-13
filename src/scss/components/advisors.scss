@@ -2,14 +2,14 @@ $slider_width: 80%;
 $element: 40rem;
 $element_with_padding: 40.2rem;
 .block {
-  &.team {
-    background-image: url(../img/block_gray_bg_rotate.svg?rnd=22);
-    background-position: top left;
+  &.advisors {
+    background-image: url(../img/block_gray_bg.svg);
+    background-position: top right;
     background-repeat: no-repeat;
-    background-size: 65%;
+    background-size: 55%;
     margin-top: -15vh;
-    padding-bottom: 15vh;
-    padding-top: 35vh;
+    padding-bottom: 5vh;
+    padding-top: 20vh;
     h2 {
       margin-bottom: 7vh;
       margin-top: -15vh;
@@ -140,7 +140,7 @@ $element_with_padding: 40.2rem;
 
 @media(min-width: 1500px) {
   .block {
-    &.team {
+    &.advisors {
       .cards {
         width: $element_with_padding * 3;
       }
@@ -150,7 +150,7 @@ $element_with_padding: 40.2rem;
 
 @media(max-width: 1100px) {
   .block {
-    &.team {
+    &.advisors {
       .cards {
         width: $element_with_padding * 2;
       }
@@ -159,7 +159,7 @@ $element_with_padding: 40.2rem;
 }
 @media(max-width: 800px) {
   .block {
-    &.team {
+    &.advisors {
       background-image: none;
       padding-top: 30vh;
       .cards {

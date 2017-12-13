@@ -90,9 +90,11 @@ document.addEventListener("DOMContentLoaded", function() {
   window.addEventListener('scroll', scroll_watch);
   window.addEventListener('scroll', reloadImages);
 
-  initSlider(document.querySelector('.cards'))
+  initSlider(document.querySelector('#team .cards'));
+  initSlider(document.querySelector('#advisors .cards'));
   window.onresize = function(){
-    initSlider(document.querySelector('.cards'))
+    initSlider(document.querySelector('#team .cards'));
+    initSlider(document.querySelector('#advisors .cards'));
   }
 
   var faq_container = document.querySelector('.questions')
