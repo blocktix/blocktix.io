@@ -796,6 +796,192 @@ h2 {
   }
 }
 
+.block.advisors {
+  background-image: url(../img/block_gray_bg.svg);
+  background-position: 100% 0;
+  background-repeat: no-repeat;
+  background-size: 55%;
+  margin-top: -15vh;
+  padding-bottom: 5vh;
+  padding-top: 20vh;
+}
+
+.block.advisors h2 {
+  margin-bottom: 7vh;
+  margin-top: -15vh;
+  text-align: center;
+}
+
+.block.advisors ul.navigation {
+  align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  justify-content: center;
+  margin-top: 0;
+  -webkit-box-align: center;
+  -webkit-box-pack: center;
+  -ms-flex-align: center;
+  -ms-flex-pack: center;
+}
+
+.block.advisors ul.navigation li {
+  border-radius: 50px;
+  cursor: pointer;
+  display: block;
+  height: 4px;
+  margin: 0 3px;
+  padding: 10px;
+  width: 4px;
+}
+
+.block.advisors ul.navigation li.active {
+  border: 1px solid #ef494e;
+}
+
+.block.advisors ul.navigation li.active:before {
+  background-color: #ef494e;
+}
+
+.block.advisors ul.navigation li:before {
+  background-color: #e4e4e4;
+  border-radius: 50px;
+  content: '';
+  display: block;
+  height: 4px;
+  margin-left: -2px;
+  margin-top: -2px;
+  width: 4px;
+}
+
+.block.advisors .cards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 3vh auto 0;
+  max-width: 98%;
+  overflow: hidden;
+  padding-bottom: 5vh;
+  width: 120.6vh;
+}
+
+.block.advisors .cards li {
+  display: inline-block;
+  flex-shrink: 0;
+  max-width: 98%;
+  position: relative;
+  width: 40vh;
+  -ms-flex-negative: 0;
+}
+
+.block.advisors .cards .card {
+  background-color: #fff;
+  border-radius: 6px;
+  box-shadow: 0 2px 20px 0 hsla(0,0%,56%,.08);
+  color: #000;
+  flex-direction: column;
+  font-size: 2rem;
+  justify-content: flex-start;
+  margin: 0 10px;
+  overflow: hidden;
+  padding: 3.5vh;
+  position: relative;
+  -webkit-box-orient: vertical;
+  -webkit-box-pack: start;
+  -ms-flex-direction: column;
+  -ms-flex-pack: start;
+}
+
+.block.advisors .cards .card,
+.block.advisors .cards .card .card-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-direction: normal;
+}
+
+.block.advisors .cards .card .card-header {
+  flex-direction: row;
+  padding-bottom: .5vh;
+  -webkit-box-orient: horizontal;
+  -ms-flex-direction: row;
+}
+
+.block.advisors .cards .card .card-header img {
+  height: 48px;
+  width: 48px;
+}
+
+.block.advisors .cards .card .card-header .person {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  line-height: auto;
+  margin-left: 4.5vh;
+  -webkit-box-direction: normal;
+  -webkit-box-orient: vertical;
+  -ms-flex-direction: column;
+  -ms-flex-wrap: wrap;
+}
+
+.block.advisors .cards .card .card-header .person div {
+  font-size: 1.8vh;
+  height: 2.5vh;
+}
+
+.block.advisors .cards .card .card-header .person div.name {
+  font-weight: 700;
+}
+
+.block.advisors .cards .card .card-header .person div.position {
+  color: #bababa;
+  font-size: 1.5vh;
+}
+
+.block.advisors .cards .card .card-content {
+  color: #676767;
+  display: block;
+  font-size: 1.8vh;
+  line-height: 160%;
+  min-height: 10vh;
+  white-space: wrap;
+  white-space: normal;
+}
+
+.block.advisors .cards .card:hover .overlap {
+  background-color: rgba(111,32,36,.9);
+  left: 0;
+  visibility: visible;
+}
+
+.block.advisors .cards .card .overlap {
+  align-items: center;
+  background-color: rgba(111,32,36,0);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  justify-content: center;
+  left: -100%;
+  position: absolute;
+  top: 0;
+  transition: all .2s;
+  visibility: hidden;
+  width: 100%;
+  -webkit-box-align: center;
+  -webkit-box-pack: center;
+  -ms-flex-align: center;
+  -ms-flex-pack: center;
+}
+
+.block.advisors .cards .card .overlap a {
+  color: #fff;
+  font-size: 3vh;
+  margin: auto 1vh;
+}
+
 .block.block1 {
   margin-top: 6vh;
 }
@@ -922,7 +1108,6 @@ h2 {
 .block .tree .row .col.description i.point,
 .block .tree .row .col.description span {
   margin-right: 2vh;
-  white-space: nowrap;
 }
 
 .block .tree .row .col:first-child i.point {
@@ -1374,9 +1559,11 @@ footer form select {
 }
 
 footer .icons {
+  flex-wrap: wrap;
   margin: 6vh auto;
   max-width: 600px;
   width: 50%;
+  -ms-flex-wrap: wrap;
 }
 
 footer .icons,
@@ -1396,7 +1583,7 @@ footer .icons .icon {
   color: #4e4e4e;
   font-size: 3vh;
   height: 8vh;
-  margin: 0 1vh;
+  margin: 1vh;
   max-height: 34px;
   max-width: 34px;
   padding: 2vh;
@@ -1424,10 +1611,12 @@ footer nav ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  flex-wrap: wrap;
   font-weight: 700;
   justify-content: center;
   -webkit-box-pack: center;
   -ms-flex-pack: center;
+  -ms-flex-wrap: wrap;
 }
 
 footer nav ul li {
@@ -1686,7 +1875,6 @@ header .mobile {
   display: -ms-flexbox;
   display: flex;
   margin: 3vh auto 0;
-  max-width: 100%;
   max-width: 98%;
   overflow: hidden;
   padding-bottom: 5vh;
@@ -1736,8 +1924,8 @@ header .mobile {
 }
 
 .block.team .cards .card .card-header img {
-  height: 34px;
-  width: 34px;
+  height: 48px;
+  width: 48px;
 }
 
 .block.team .cards .card .card-header .person {
@@ -1811,8 +1999,12 @@ header .mobile {
 }
 
 @media (min-width:1500px) {
+  .block.advisors .cards {
+    width: 120.6vh;
+  }
+
   .block.team .cards {
-    width: 160.8vh;
+    width: 120.6vh;
   }
 }
 
@@ -1834,6 +2026,10 @@ header .mobile {
 }
 
 @media (max-width:1100px) {
+  .block.advisors .cards {
+    width: 80.4vh;
+  }
+
   .block.block2 {
     padding-top: 24vh;
   }
@@ -1858,6 +2054,38 @@ header .mobile {
   .animation.animation2 .icons {
     transform: scale(.8);
     -webkit-transform: scale(.8);
+  }
+
+  .block.advisors {
+    background-image: none;
+    padding-top: 30vh;
+  }
+
+  .block.advisors .cards {
+    width: 40.2vh;
+  }
+
+  .block.advisors .cards .card {
+    margin-top: 2vh;
+  }
+
+  .block.advisors .cards .card .card-header img {
+    height: 5vh;
+    width: 5vh;
+  }
+
+  .block.advisors .cards .card .card-header .person div.name,
+  .block.advisors .cards .card .card-header .person div.position {
+    font-size: 2.2vh;
+  }
+
+  .block.advisors .cards .card .card-content {
+    font-size: 2.4vh;
+  }
+
+  .block.advisors .frame {
+    margin-left: calc(100% - 120vh);
+    width: 120vh;
   }
 
   .block.block1,
@@ -1996,6 +2224,7 @@ header .mobile {
   .block4 .tree .row .col.description span {
     margin: 0;
     order: 2;
+    white-space: nowrap;
     -webkit-box-ordinal-group: 3;
     -ms-flex-order: 2;
   }

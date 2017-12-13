@@ -62,6 +62,7 @@ footer {
   }
   .icons {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     margin: 6vh auto;
     max-width: 600px;
@@ -75,7 +76,7 @@ footer {
       font-size: 3vh;
       height: 8vh;
       justify-content: center;
-      margin: 0 1vh;
+      margin: 1vh 1vh;
       max-height: 34px;
       max-width: 34px;
       padding: 2vh;
@@ -97,6 +98,7 @@ footer {
     width: 70%;
     ul {
       display: flex;
+      flex-wrap: wrap;
       font-weight: bold;
       justify-content: center;
       li {
