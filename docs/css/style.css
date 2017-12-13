@@ -1108,6 +1108,7 @@ h2 {
 .block .tree .row .col.description i.point,
 .block .tree .row .col.description span {
   margin-right: 2vh;
+  z-index: 9;
 }
 
 .block .tree .row .col:first-child i.point {
@@ -1561,7 +1562,7 @@ footer form select {
 footer .icons {
   flex-wrap: wrap;
   margin: 6vh auto;
-  max-width: 600px;
+  max-width: 800px;
   width: 50%;
   -ms-flex-wrap: wrap;
 }

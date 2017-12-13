@@ -7,6 +7,7 @@
   "menu_attend_events": "Attend Events",
   "menu_tix_tokens": "TIX Tokens",
   "menu_team": "Span",
+  "menu_advisors": "Advisors",
   "menu_faq": "FAQ",
   "menu_signup": "Sign Up",
 
@@ -48,8 +49,9 @@
   "block6_paragraph": "The Blocktix platform will require TIX Tokens to be used as a system access fee as well as to introduce new events to the event feed. TIX tokens will also be required to place in-application advertising. TIX and/or ETH tokens will be necessary to facilitate ticket purchases and P2P transfers. The hosting, transfer and marketing fees will be distributed to TIX token holders who participate in the event/advertisment verification process which will be available to all TIX holders on the platform",
 
   "team_header": "ons span",
-  "team_rob_name": "Rob Schins",
+
   "team_rob_position": "CEO",
+  "team_rob_name": "Rob Schins",  
   "team_rob_description": "With over one year experience as Community Manager for projects like Blackcoin and ShadowCash, Rob now joins the Blocktix Team. His task: to manage the project from idea to execution.",
 
   "team_ryno_position": "CTO",
@@ -60,9 +62,19 @@
   "team_bojan_name": "Bojan Malešević",
   "team_bojan_description": "A big love for crypto and always willing to help awesome projects out, Bojan joins the Blocktix team as the Project's Assistant. Always ready to help out in any way he can: putting out fires, talking with the community and more.",
 
-  "team_marshal_position": "Advisor",
-  "team_marshal_name": "Marshall Hayner",
-  "team_marshal_description": "Marshall provides Blocktix with invaluable insight and advice. He is also the CEO of MetalPay, a groundbreaking value generator that rewards every transaction.",
+  "advisors_header": "our advisors",
+  
+  "advisor_marshal_position": "Advisor",
+  "advisor_marshal_name": "Marshall Hayner",
+  "advisor_marshal_description": "Marshall provides Blocktix with invaluable insight and advice. He is also the CEO of MetalPay, a groundbreaking value generator that rewards every transaction.",
+  
+  "advisor_randy_position": "Advisor",
+  "advisor_randy_name": "Randy Jackson",
+  "advisor_randy_description": "Randy is an American bassist, singer, record producer, music manager, and former A&R executive. He is best known as a judge on American Idol and Executive Producer, and will be working as an Advisor / Consultant for Blocktix, designing our promotional event strategy.",
+  
+  "advisor_everette_position": "Advisor",
+  "advisor_everette_name": "Everette Harp",
+  "advisor_everette_description": "Everette Harp is a Jazz saxophonist who has been in the music industry for over 25 years. With a total of eleven albums and numerous collaborations under his belt, Everette is one of the most renowned Jazz artists of his time, continuing to play and tour with many celebrated artists. Everette will be working with Blocktix as both an ambassador and helping to guide our promotional event strategy.",
 
   "contactus_header": "contact us",
 
