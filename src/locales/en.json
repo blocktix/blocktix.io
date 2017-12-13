@@ -64,17 +64,17 @@
 
   "advisors_header": "our advisors",
   
-  "advisor_marshal_position": "Advisor",
-  "advisor_marshal_name": "Marshall Hayner",
-  "advisor_marshal_description": "Marshall provides Blocktix with invaluable insight and advice. He is also the CEO of MetalPay, a groundbreaking value generator that rewards every transaction.",
-  
   "advisor_randy_position": "Advisor",
   "advisor_randy_name": "Randy Jackson",
   "advisor_randy_description": "Randy is an American bassist, singer, record producer, music manager, and former A&R executive. He is best known as a judge on American Idol and Executive Producer, and will be working as an Advisor / Consultant for Blocktix, designing our promotional event strategy.",
   
   "advisor_everette_position": "Advisor",
   "advisor_everette_name": "Everette Harp",
-  "advisor_everette_description": "Everette Harp is a Jazz saxophonist who has been in the music industry for over 25 years. With a total of eleven albums and numerous collaborations under his belt, Everette is one of the most renowned Jazz artists of his time, continuing to play and tour with many celebrated artists. Everette will be working with Blocktix as both an ambassador and helping to guide our promotional event strategy.",
+  "advisor_everette_description": "Everette Harp is a Jazz saxophonist who has been in the music industry for over 25 years. Everette is one of the most renowned Jazz artists of his time, continuing to play and tour with many celebrated artists. Everette will be working with Blocktix as both an ambassador and helping to guide our promotional event strategy.",
+  
+  "advisor_marshal_position": "Advisor",
+  "advisor_marshal_name": "Marshall Hayner",
+  "advisor_marshal_description": "Marshall provides Blocktix with invaluable insight and advice. He is also the CEO of MetalPay, a groundbreaking value generator that rewards every transaction.",
 
   "contactus_header": "contact us",
 
