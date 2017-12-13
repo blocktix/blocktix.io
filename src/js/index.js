@@ -92,10 +92,10 @@ document.addEventListener("DOMContentLoaded", function() {
 
   initSlider(document.querySelector('#team .cards'));
   initSlider(document.querySelector('#advisors .cards'));
-  window.onresize = function(){
+  window.onresize = debounce(function(){
     initSlider(document.querySelector('#team .cards'));
     initSlider(document.querySelector('#advisors .cards'));
-  }
+  }, 200);
 
   var faq_container = document.querySelector('.questions')
   var questions     = faq_container.querySelectorAll('.question')
