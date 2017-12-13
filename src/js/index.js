@@ -91,9 +91,9 @@ document.addEventListener("DOMContentLoaded", function() {
   window.addEventListener('scroll', reloadImages);
 
   initSlider(document.querySelector('.cards'))
-  window.onresize = function(){
+  window.onresize = debounce(function(){
     initSlider(document.querySelector('.cards'))
-  }
+  }, 200);
 
   var faq_container = document.querySelector('.questions')
   var questions     = faq_container.querySelectorAll('.question')
