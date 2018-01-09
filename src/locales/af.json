@@ -61,7 +61,11 @@
   "team_bojan_position": "Project Assistant",
   "team_bojan_name": "Bojan Malešević",
   "team_bojan_description": "A big love for crypto and always willing to help awesome projects out, Bojan joins the Blocktix team as the Project's Assistant. Always ready to help out in any way he can: putting out fires, talking with the community and more.",
-
+  
+  "advisor_marshal_position": "Advisor",
+  "advisor_marshal_name": "Marshall Hayner",
+  "advisor_marshal_description": "Marshall provides Blocktix with invaluable insight and advice. He is also the CEO of MetalPay, a groundbreaking value generator that rewards every transaction.",
+  
   "advisors_header": "our advisors",
   
   "advisor_randy_position": "Advisor",
