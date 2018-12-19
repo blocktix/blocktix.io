@@ -1,9 +1,0 @@
-nav
-  ul
-    each item in menu_items
-      if item.name == 'signup'
-        li.background.navigation_link
-          a(href = `#${item.name}`)= item.title
-      else
-        li.navigation_link
-          a(href = `#${item.name}`)= item.title
